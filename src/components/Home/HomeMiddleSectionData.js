@@ -8,7 +8,7 @@ const HomeMiddleSectionData = ({ data }) => {
     return (
         <>
             <div style={{ padding: 'inherit' }}>
-                <div className='col-md-6' style={{ marginLeft: '5rem' }}>
+                <div className='col-md-6 middle-section-data'>
                     <h3 style={{ fontSize: '30px' }}>{data.innerTitle}</h3>
                     <div className='heading-small-22 text-weight-light mb-3'>{data.content}</div>
                     <Link
@@ -22,7 +22,7 @@ const HomeMiddleSectionData = ({ data }) => {
                     </Link>
                 </div>
                 <div className='text-center'>
-                    <img src={data.image} className='img-fluid' style={{ height: '400px', width: '550px' }} alt={data.title} />
+                    <img src={data.image} className='img-fluid middle-section-img' alt={data.title} />
                 </div>
             </div>
         </>

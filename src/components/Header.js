@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/css/header.css';
 import bonsaiLogo from '../assets/images/bonsai-logo.svg';
-import { NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -19,7 +18,7 @@ const Header = () => {
                         <img src={bonsaiLogo} className='img-fluid' style={{ height: '90px', width: '150px' }} alt="Logo" />
                     </a>
                 </div>
-                <nav className='nav'>
+                <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <li>Product</li>
                         <li>Templates</li>
@@ -40,6 +39,7 @@ const Header = () => {
 };
 
 export default Header;
+
 
 
 // import React, { useState } from 'react';

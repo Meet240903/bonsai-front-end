@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/review.css';
-import kevinImg from '../assets/images/kevin.jpg'
-import jasonImg from '../assets/images/JasonCuray.jpg'
+import kevinImg from '../assets/images/kevin.jpg';
+import jasonImg from '../assets/images/JasonCuray.jpg';
 
 const Review = () => {
     const reviewData = [
@@ -29,34 +29,29 @@ const Review = () => {
             name: 'Danica Mitchell',
             position: 'Illustrator'
         },
-    ]
+    ];
+
     return (
         <>
-            <div className='text-center' style={{ marginTop: '5rem' }}>
+            <div className="text-center" style={{ marginTop: '5rem' }}>
                 <h1>Bonsai Reviews</h1>
                 <p>200,000+ Freelancers Love Bonsai. Here's why.</p>
                 <small>Last Updated August 10, 2024</small>
             </div>
-            <div className='container' style={{ marginTop: '3rem' }}>
-                <div className='row'>
-                    {
-                        reviewData?.map((data) => {
-                            return (
-                                <>
-                                    <div className='col-6 mb-4'>
-                                        <div className='review'>
-                                            <div className='my-4' style={{ textAlign: 'left' }}>
-                                                <img src={data?.image} className='img-fluid rounded-circle' alt='user-img' style={{ height: '150px', width: '150px' }} />
-                                            </div>
-                                            <p>"{data?.content}"</p>
-                                            <h4>{data?.name}</h4>
-                                            <small>{data?.position}</small>
-                                        </div>
-                                    </div>
-                                </>
-                            )
-                        })
-                    }
+            <div className="container" style={{ marginTop: '3rem' }}>
+                <div className="row">
+                    {reviewData.map((data, index) => (
+                        <div className="col-12 col-md-6 mb-4" key={index}>
+                            <div className="review">
+                                <div className="my-4" style={{ textAlign: 'center' }}>
+                                    <img src={data.image} className="img-fluid rounded-circle" alt="user-img" />
+                                </div>
+                                <p>"{data.content}"</p>
+                                <h4>{data.name}</h4>
+                                <small>{data.position}</small>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </>

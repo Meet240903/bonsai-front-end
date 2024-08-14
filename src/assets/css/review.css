@@ -7,6 +7,11 @@
     text-align: center;
 }
 
+.review img {
+    height: 150px;
+    width: 150px;
+}
+
 .review p {
     font-style: normal;
     font-size: 18px;
@@ -24,4 +29,21 @@
     margin-top: 5px;
     text-align: left;
     color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .review img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .review p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .review h4, .review small {
+        text-align: center;
+    }
 }

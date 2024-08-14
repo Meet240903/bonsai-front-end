@@ -25,6 +25,15 @@
     font-weight: 700;
 }
 
+.middle-section-data{
+    margin-left: 5rem;
+}
+
+.middle-section-img{
+    height: 400px;
+    width: 550px;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -38,6 +47,10 @@
 
     .explore-link {
         font-size: 14px;
+    }
+    .middle-section-data{
+        margin:0;
+        text-align: justify;
     }
 }
 
@@ -57,5 +70,9 @@
     .proposal-image {
         width: 100%;
         height: auto;
+    }
+    .middle-section-data{
+        margin:0;
+        text-align: justify;
     }
 }
