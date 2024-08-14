@@ -1,0 +1,266 @@
+.text-center {
+  text-align: center;
+}
+
+.pricing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem; /* Spacing between title and toggle */
+}
+
+.pricing-label {
+  font-size: 1rem; /* Adjust font size */
+  margin: 0 1rem; /* Spacing between labels */
+  cursor: pointer;
+  transition: font-weight 0.3s ease;
+}
+
+.pricing-label.active {
+  font-weight: bold; /* Bold for active label */
+}
+
+.switch {
+  width: 60px;
+  height: 30px;
+  background-color: #00b289; /* Consistent color */
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 0.5rem; /* Margin around the switch */
+}
+
+.toggle {
+  width: 28px; /* Size of the toggle */
+  height: 28px;
+  background-color: white; /* Background color of the toggle */
+  border-radius: 50%;
+  position: absolute;
+  top: 1px; /* Center the toggle vertically */
+  transition: transform 0.3s ease; /* Smooth toggle movement */
+}
+
+.toggle.on {
+  transform: translateX(30px); /* Move to the right when active */
+}
+
+.toggle.off {
+  transform: translateX(0); /* Move to the left when inactive */
+}
+
+.free-text-img {
+  position: absolute;
+  margin-left: 10px; /* Adjusted for responsiveness */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Yearly Section Styling */
+.yearly-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yearly-section .free-text {
+  margin-bottom: 0.5rem; /* Adjust the spacing between the image and the text */
+}
+
+.price-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space between items */
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  height: 100%; /* Ensure the container stretches to fill the available height */
+}
+
+.price-details .text-center {
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.price-box {
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 2px solid #01b289;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 62px;
+  line-height: 72px;
+  font-weight: 600;
+}
+
+.currency-symbol {
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+  align-self: flex-start;
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.heading-medium-26 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-size: 1.625rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.list-item {
+  margin-top: 2rem; /* Spacing above the list item section */
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+ul li {
+  margin-bottom: 1rem; /* Space between list items */
+  font-size: 1rem; /* Base font size for list items */
+  line-height: 1.5; /* Improve readability */
+  text-align: left;
+}
+
+.price-btn {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #01b289;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.charge-div {
+    border: none;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }  
+
+.charge-inner-div {
+  text-align: end;
+}
+
+/* .rotated-badge {
+    display: inline-block; 
+    transform: rotate(48deg); 
+    position: relative; 
+    top: 140px;
+    right: -120px; 
+    background-color: #00b289;
+} */
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .free-text-img {
+    max-width: 80%; /* Adjust the image size for medium screens */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+  }
+  ul li {
+    font-size: 0.9rem; /* Slightly smaller font size on large screens */
+    text-align: left;
+  }
+  .charge-inner-div {
+    text-align: center;
+  }
+  .charge-div {
+    
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .pricing-label {
+    font-size: 0.95rem; /* Adjust font size for tablets */
+  }
+  .free-text-img {
+    max-width: 70%; /* Further adjust image size for smaller tablets */
+  }
+  .list-item {
+    margin-top: 1.5rem; /* Adjust spacing for tablets */
+  }
+
+  ul li {
+    font-size: 0.85rem; /* Further reduce font size on tablets */
+    text-align: left;
+  }
+  .charge-inner-div {
+    text-align: center;
+  }
+  .charge-div {
+    
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-label {
+    font-size: 0.9rem; /* Smaller font size for smaller tablets */
+  }
+  .free-text-img {
+    max-width: 60%; /* Adjust image size for smaller tablets */
+  }
+  .list-item {
+    margin-top: 1rem; /* Adjust spacing for smaller tablets */
+  }
+
+  ul li {
+    font-size: 0.8rem; /* Smaller font size for smaller tablets */
+    text-align: left;
+  }
+  .charge-inner-div {
+    text-align: center;
+  }
+  .charge-div {
+    
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-label {
+    font-size: 0.85rem; /* Adjust font size for mobile screens */
+  }
+  .switch {
+    width: 50px; /* Smaller switch on mobile */
+    height: 25px;
+  }
+  .toggle {
+    width: 20px; /* Smaller toggle */
+    height: 20px;
+  }
+  .free-text-img {
+    max-width: 100%; /* Full width for mobile screens */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+  }
+  .list-item {
+    margin-top: 0.5rem; /* Adjust spacing for mobile screens */
+  }
+
+  ul li {
+    font-size: 0.75rem; /* Smaller font size for mobile screens */
+    text-align: left;
+  }
+  .charge-inner-div {
+    text-align: center;
+  }
+  .charge-div {
+    
+    padding: 2rem;
+  }
+}

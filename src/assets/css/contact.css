@@ -1,0 +1,62 @@
+/* Contact button styling */
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00b289;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adjust spacing from the top */
+}
+
+/* Hover effect for the button */
+.contact-btn:hover {
+  background-color: #009977;
+}
+
+.contact-class{
+  padding: 5rem;
+  background-color: #f2faff;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .row {
+      padding: 3rem; /* Adjust padding for medium screens */
+  }
+
+  .contact-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .row {
+      flex-direction: column; /* Stack the columns on small screens */
+      padding: 2rem; /* Further adjust padding */
+  }
+
+  .contact-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  .col-md-5 {
+      margin-top: 1.5rem; /* Space between heading and button */
+  }
+
+  .contact-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      width: 100%; /* Make the button full-width */
+      margin-top: 10px; /* Space between the heading and button */
+  }
+}

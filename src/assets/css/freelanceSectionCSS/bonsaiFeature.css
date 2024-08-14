@@ -1,0 +1,50 @@
+.feature-main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.feature-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+    .feature-main {
+        gap: 40px;
+    }
+    
+    .feature-inner {
+        flex-direction: row;
+        max-width: 48%;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+    .feature-main {
+        gap: 50px;
+    }
+    
+    .feature-inner {
+        max-width: 45%;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+    .feature-inner {
+        max-width: 40%;
+    }
+}

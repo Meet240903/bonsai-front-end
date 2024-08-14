@@ -1,0 +1,59 @@
+.slider-container {
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5rem;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensures the container spans the full width */
+  }
+  
+  .slide {
+    min-width: 50%; /* Ensures each slide takes up half of the container width */
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 20px; /* Add margin to create space between slides */
+    border: 1px solid none;
+    background-color: #fff; /* Change this to your desired background color */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slide h4 {
+    text-align: left;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .slide {
+      min-width: 100%; /* Full width for smaller screens */
+      margin-right: 0; /* Remove margin for smaller screens */
+    }
+  }
+  

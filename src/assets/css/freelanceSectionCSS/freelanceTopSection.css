@@ -1,0 +1,84 @@
+.freelance-top-main-div{
+    padding: 3rem;
+}
+
+.freelance-top-first-div{
+    padding: 59px;
+}
+
+.email-signup {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.email-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #00b289;
+    border-radius: 5px 0 0 5px;
+    margin-right: -1px; /* Adjusts for the border overlap */
+    font-size: 1rem; /* Adjust font size for readability */
+}
+
+.start-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #00b289;
+    border-radius: 0 5px 5px 0;
+    background-color: #00b289;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Adjust font size for readability */
+}
+
+.start-button:hover {
+    background-color: #009d7a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-md-6 {
+        padding: 1rem;
+    }
+
+    .email-signup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .email-input,
+    .start-button {
+        border-radius: 5px;
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add space below input and button on small screens */
+    }
+
+    .start-button {
+        width: 100%;
+    }
+
+    .freelance-top-first-div{
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .email-input,
+    .start-button {
+        font-size: 0.875rem; /* Smaller font size for very small screens */
+    }
+    .freelance-top-first-div{
+        padding: 0;
+    }
+}

@@ -1,0 +1,101 @@
+.service-section {
+    max-width: 700px;
+    margin: 0 auto; /* Center the section */
+    padding: 0 1rem; /* Add some padding for smaller screens */
+}
+
+.service-content {
+    padding: 2rem 1rem; /* Adjust padding for better spacing on small screens */
+}
+
+.service-content div {
+    padding: 20px; /* Reduce padding for smaller screens */
+}
+
+.service-content div p {
+    font-size: 1rem; /* Adjust font size for readability on small screens */
+}
+
+.service-section-2 {
+    max-width: 700px;
+    margin: 0 auto; /* Center the section */
+    background-color: #f2faff;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem; /* Adjust padding for smaller screens */
+    border-radius: 5px;
+}
+
+.service-section-2 p {
+    font-size: 1rem; /* Adjust font size for readability on small screens */
+}
+
+.monthly-plan,
+.annual-plan {
+    display: flex;
+    align-items: center;
+    background-color: rgba(230, 245, 255, .8);
+    border-radius: 5px;
+    padding: 30px; /* Reduce padding for smaller screens */
+    margin-bottom: 1rem; /* Add margin to separate the two sections */
+}
+
+.annual-plan {
+    background-color: #def2ff;
+}
+
+@media (max-width: 768px) {
+    .service-content {
+        padding: 1.5rem 1rem; /* Adjust padding */
+    }
+
+    .service-content div {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .service-content div p {
+        font-size: 0.9rem; /* Smaller font size for better fit */
+    }
+
+    .service-section-2 {
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    .service-section-2 p {
+        font-size: 0.9rem; /* Smaller font size */
+        text-align: justify;
+    }
+
+    .monthly-plan,
+    .annual-plan {
+        padding: 15px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .service-content {
+        padding: 1rem; /* Further adjust padding */
+    }
+
+    .service-content div {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .service-content div p {
+        font-size: 0.85rem; /* Smaller font size */
+    }
+
+    .service-section-2 {
+        padding: 1rem; /* Further adjust padding */
+    }
+
+    .service-section-2 p {
+        font-size: 0.85rem; /* Smaller font size */
+        text-align: justify;
+    }
+
+    .monthly-plan,
+    .annual-plan {
+        padding: 10px; /* Reduce padding */
+    }
+}

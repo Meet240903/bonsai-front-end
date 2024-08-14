@@ -1,0 +1,71 @@
+/* Base styles for the accordion */
+.custom-accordion .accordion-button {
+    border: none; /* Remove border */
+    background-color: transparent; /* Remove background */
+    box-shadow: none; /* Remove shadow */
+    padding: 1rem; /* Add padding */
+    font-size: 1rem; /* Font size */
+    font-weight: normal; /* Font weight */
+}
+
+.custom-accordion .accordion-body {
+    padding: 1rem; /* Add padding */
+    background-color: #f8f9fa; /* Background color */
+}
+
+
+.custom-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #00b289;
+    transition: transform 0.3s ease;
+}
+
+.custom-accordion .accordion-item:not(.show) .accordion-arrow {
+    transform: rotate(0deg);
+}
+
+.custom-accordion .accordion-item.show .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .custom-accordion .accordion-button {
+        padding: 0.75rem; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .custom-accordion .accordion-body {
+        padding: 0.75rem; /* Adjust padding for smaller screens */
+    }
+
+    .accordion-arrow {
+        border-top: 5px solid #00b289; /* Adjust arrow size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-accordion .accordion-button {
+        padding: 0.5rem; /* Further adjust padding for extra-small screens */
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .custom-accordion .accordion-body {
+        padding: 0.5rem; /* Further adjust padding for extra-small screens */
+    }
+
+    .accordion-arrow {
+        border-top: 4px solid #00b289; /* Further adjust arrow size */
+    }
+}

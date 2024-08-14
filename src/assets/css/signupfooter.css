@@ -1,0 +1,53 @@
+/* SignUpFooter styling */
+.signup-footer {
+    margin-bottom: 2rem;
+    font-size: 12px;
+    color: rgb(125, 122, 122);
+    text-align: center;
+    width: 100%; /* Ensure full width on all screens */
+    max-width: 800px; /* Set a max-width to limit the width on larger screens */
+    margin-left: auto;
+    margin-right: auto; /* Center the footer content */
+}
+
+.signup-footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.signup-footer li {
+    padding: 0.5rem 0;
+}
+
+.signup-footer a {
+    color: rgb(125, 122, 122);
+    text-decoration: none;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .signup-footer ul {
+        gap: 1.5rem; /* Reduced gap on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-footer ul {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        gap: 1rem; /* Further reduced gap */
+    }
+
+    .signup-footer {
+        font-size: 10px; /* Reduce font size on smaller screens */
+        padding: 0 20px; /* Add padding to prevent content from touching the edges */
+    }
+}
