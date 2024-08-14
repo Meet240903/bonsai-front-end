@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bonsai-front-end/static/css/main.e27e7b30.css",
-    "main.js": "/bonsai-front-end/static/js/main.ee0ed6ca.js",
+    "main.js": "/bonsai-front-end/static/js/main.8a1e5422.js",
     "static/js/453.edafc35d.chunk.js": "/bonsai-front-end/static/js/453.edafc35d.chunk.js",
     "static/media/proposals.png": "/bonsai-front-end/static/media/proposals.9b7e2d51290be27d8f59.png",
     "static/media/blog.png": "/bonsai-front-end/static/media/blog.3d6d0d7e9fa067886244.png",
@@ -102,11 +102,11 @@
     "index.html": "/bonsai-front-end/index.html",
     "static/media/faCheck.svg": "/bonsai-front-end/static/media/faCheck.6740ade18c674eb2916f596005517f5d.svg",
     "main.e27e7b30.css.map": "/bonsai-front-end/static/css/main.e27e7b30.css.map",
-    "main.ee0ed6ca.js.map": "/bonsai-front-end/static/js/main.ee0ed6ca.js.map",
+    "main.8a1e5422.js.map": "/bonsai-front-end/static/js/main.8a1e5422.js.map",
     "453.edafc35d.chunk.js.map": "/bonsai-front-end/static/js/453.edafc35d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e27e7b30.css",
-    "static/js/main.ee0ed6ca.js"
+    "static/js/main.8a1e5422.js"
   ]
 }
