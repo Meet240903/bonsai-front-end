@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>ill_Cross-Platform</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Time-Tracking" transform="translate(-1092.000000, -1156.000000)">
+            <g id="ill_Cross-Platform" transform="translate(1092.000000, 1157.000000)">
+                <path d="M85.7880051,51.9441582 C85.7880051,75.4314541 66.745352,94.4750765 43.2570867,94.4750765 C19.7688214,94.4750765 0.726168367,75.4314541 0.726168367,51.9441582 C0.726168367,28.4549235 19.7688214,9.41227041 43.2570867,9.41227041 C66.745352,9.41227041 85.7880051,28.4549235 85.7880051,51.9441582" id="Fill-45" fill="#A7E0FE"></path>
+                <path d="M92.2356939,30.5015918 C93.5123776,34.5478163 94.2016122,38.8557755 94.2016122,43.3236837 C94.2016122,66.8129184 75.160898,85.854602 51.6706939,85.854602 C28.183398,85.854602 9.13977551,66.8129184 9.13977551,43.3236837 C9.13977551,19.834449 28.183398,0.792765306 51.6706939,0.792765306 C60.4795204,0.792765306 68.6640612,3.47118367 75.4517143,8.05638776" id="Stroke-46" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9.14103571,43.3237806 L65.0601684,43.3237806 L87.0197092,43.3237806 L94.2028724,43.3237806" id="Stroke-47" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4"></path>
+                <line x1="51.6719541" y1="85.854699" x2="51.6719541" y2="0.791892857" id="Stroke-48" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4"></line>
+                <path d="M19.8762296,71.5600102 C19.8762296,71.5600102 30.4483724,59.2197041 52.3216378,59.2197041 C74.1910255,59.2197041 82.8515357,72.2376122 82.8515357,72.2376122" id="Stroke-49" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4"></path>
+                <path d="M51.6719541,0.792862245 C51.6719541,0.792862245 30.2707806,11.5491888 30.2707806,43.3237806 C30.2707806,75.0983724 51.3646582,85.854699 51.3646582,85.854699" id="Stroke-50" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4"></path>
+                <path d="M82.8504694,15.087551 C82.8504694,15.087551 72.2792959,27.4288265 50.4060306,27.4288265 C28.5366429,27.4288265 20.6400102,15.3987245 20.6400102,15.3987245" id="Stroke-51" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4"></path>
+                <path d="M51.0565867,85.854699 C51.0565867,85.854699 72.4567908,75.0974031 72.4567908,43.3228112 C72.4567908,11.5491888 51.3629133,0.791892857 51.3629133,0.791892857" id="Stroke-52" stroke="#00B388" stroke-width="2.356" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

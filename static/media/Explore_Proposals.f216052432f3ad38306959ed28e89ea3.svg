@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="148px" viewBox="0 0 133 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Explore Proposals</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contracts" transform="translate(-815.000000, -4119.000000)">
+            <g id="06.Keep-Exploring" transform="translate(250.000000, 3945.000000)">
+                <g id="Explore-Proposals" transform="translate(565.000000, 142.000000)">
+                    <g transform="translate(0.000000, 29.000000)" id="Group-34">
+                        <g transform="translate(-31.000000, 5.000000)">
+                            <path d="M31.6121153,216.22019 C20.4357596,216.22019 11.3522228,207.159537 11.3522228,196.011336 L11.3522228,21.9467935 C11.3522228,19.4908564 11.8534441,17.1752586 12.6624328,15 C5.36394724,17.1840298 0,23.8676872 0,31.858254 L0,209.29971 C0,219.06206 7.94919394,227 17.7361993,227 L127.477284,227 C135.03957,227 141.441133,222.246007 144,215.606206 C142.469956,215.974597 140.913532,216.22019 139.277968,216.22019 L31.6121153,216.22019 Z" id="Fill-1" fill="#A7E0FE"></path>
+                            <path d="M162,93.4931916 L162,197.163525 C162,206.456839 154.447187,214 145.111559,214 L30.8884405,214 C21.5703774,214 14,206.456839 14,197.163525 L14,16.8277244 C14,7.53441014 21.5703774,0 30.8884405,0 L145.111559,0 C154.447187,0 162,7.53441014 162,16.8277244 L162,44.2788796" id="Stroke-3" stroke="#00B388" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <line x1="39" y1="107.5" x2="116" y2="107.5" id="Stroke-7" stroke="#00B388" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="39" y1="133.5" x2="138" y2="133.5" id="Stroke-9" stroke="#00B388" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="39" y1="80.5" x2="138" y2="80.5" id="Stroke-5" stroke="#00B388" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
