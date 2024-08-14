@@ -17,10 +17,11 @@ import Affiliates from './components/Affiliates';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/bonsai-front-end'>
         <Routes>
           {/* Routes that include Header and Footer */}
           <Route
+            exact
             path="/"
             element={
               <>
@@ -80,7 +81,7 @@ function App() {
               </>
             }
           />
-                    <Route
+          <Route
             path="/affiliate"
             element={
               <>

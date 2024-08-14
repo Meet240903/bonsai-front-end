@@ -624,14 +624,15 @@ const Footer = () => {
                                         }}
                                         state={{ data }}  // Pass the data object as state
                                         key={data?.slugs}
+                                        
                                     >
                                         <li>{data?.title}</li>
                                     </Link>
                                 ))
                             }
                             <br /><br />
-                            <a href='/pricing'><li>Pricing</li></a>
-                            <a href='/review'><li>Bonsai Reviews</li></a>
+                            <Link to='/pricing' target='_top'><li>Pricing</li></Link>
+                            <Link to='/review' target='_top'><li>Bonsai Reviews</li></Link>
                         </ul>
                     </div>
                     <div className="footer-section">
@@ -663,14 +664,14 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4>Bonsai</h4>
                         <ul>
-                            <a href='/about'><li>About</li></a>
+                            <Link to='/about' target='_top'><li>About</li></Link>
                             <li>Careers</li>
                             <li>Support</li>
                             <li>LinkedIn</li>
                             <li>Twitter</li>
-                            <a href='/privacy'><li>Privacy policy</li></a>
+                            <Link to='/privacy' target='_top'><li>Privacy policy</li></Link>
                             <li>Legal</li>
-                            <a href='/affiliate'> <li>Affiliates</li></a>
+                            <Link to='/affiliate' target='_top'> <li>Affiliates</li></Link>
                             <li>Write for Us</li>
                         </ul>
                     </div>

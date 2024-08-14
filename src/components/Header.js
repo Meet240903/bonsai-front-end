@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../assets/css/header.css';
 import bonsaiLogo from '../assets/images/bonsai-logo.svg';
 import { NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
         <header className="header">
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div className="logo">
-                    <a href='/'>
+                    <a href='/bonsai-front-end'>
                         <img src={bonsaiLogo} className='img-fluid' style={{ height: '90px', width: '150px' }} alt="Logo" />
                     </a>
                 </div>
@@ -22,13 +23,13 @@ const Header = () => {
                     <ul>
                         <li>Product</li>
                         <li>Templates</li>
-                        <a href="/pricing"><li>Pricing</li></a>
-                        <a href="/review"><li>Reviews</li></a>
+                        <Link to="/pricing"><li>Pricing</li></Link>
+                        <Link to="/review"><li>Reviews</li></Link>
                     </ul>
                 </nav>
                 <div className="header-buttons">
-                    <a href='/signin' className="btn login">Login</a>
-                    <a href='/signup' className="btn start-free">Start Free</a>
+                    <Link to='/signin' className="btn login">Login</Link>
+                    <Link to='/signup' className="btn start-free">Start Free</Link>
                 </div>
                 <button className="menu-toggle" onClick={toggleMenu}>
                     ☰

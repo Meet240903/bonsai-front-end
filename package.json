@@ -1,8 +1,8 @@
 {
   "name": "bonsai",
-  "version": "0.1.0",
-  "private": true,
   "homepage": "https://meet240903.github.io/bonsai-front-end/",
+  "version": "0.1.0",
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
