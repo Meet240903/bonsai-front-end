@@ -14,6 +14,8 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import About from './components/About';
 import Affiliates from './components/Affiliates';
 import BonsaiCash from './components/BonsaiCash';
+import Careers from './components/Careers';
+import Job from './components/Job';
 
 function App() {
   return (
@@ -99,6 +101,24 @@ function App() {
                 <Header />
                 <BonsaiCash />
                 <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/careers"
+            element={
+              <>
+                <Header />
+                <Careers />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            path="/job"
+            element={
+              <>
+                <Job />
               </>
             }
           />

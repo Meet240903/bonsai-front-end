@@ -1,0 +1,142 @@
+.job-header {
+  background-image: url("../images/job/bonsai-text-logo.png");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-div {
+  position: absolute;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 10px;
+  top: 230px;
+  left: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-logo {
+  height: 130px;
+}
+
+.job-container{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+}
+
+.job-section{
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job-section:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.8s ease;
+}
+
+.job-section h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.job-bonsai-content p{
+    font-size: 14px;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.job-span{
+    background-color: #f5f6f8;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.job-section-span{
+    background-color: #f5f6f8;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.job-span-others{
+    background-color: rgb(225, 248, 236);
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.job-span-operations{
+    background-color: rgb(244, 229, 217);
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.job-span-product{
+    background-color: rgb(237, 224, 235);
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.job-span-customer-success{
+    background-color: rgb(231, 241, 251);
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .job-header {
+    height: 200px;
+  }
+  .job-logo {
+    height: 70px;
+  }
+  .logo-div{
+    top:164px;
+    left:20px;
+  }
+  .job-section{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* .col-md-10{
+    max-width: 200px;
+  } */
+}
+
+@media (max-width: 576px) {
+  .job-header {
+    height: 200px;
+  }
+  .job-logo {
+    height: 70px;
+  }
+  .job-span{
+    font-size: smaller;
+  }
+  .job-span-others, .job-span-product, .job-span-operations, .job-span-customer-success{
+    font-size: smaller;
+    padding: 5px;
+
+  }
+  .job-section{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  .job-section-span{
+    font-size: smaller;
+    padding: 5px;
+  }
+}

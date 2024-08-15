@@ -1,0 +1,49 @@
+.career-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.career-content {
+  padding: 3rem;
+}
+
+.inner-h2 {
+  color: #009977;
+  font-weight: bold;
+}
+
+.career-content p {
+  font-size: 16px;
+  line-height: 1.8rem;
+}
+
+.view-opening-btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #009977;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .career-content p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 576px) {
+  .career-content p {
+    text-align: justify;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  .career-content p {
+    text-align: justify;
+  }
+}

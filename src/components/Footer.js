@@ -673,7 +673,7 @@ const Footer = () => {
                         <h4>Bonsai</h4>
                         <ul>
                             <Link to='/about'><li>About</li></Link>
-                            <li>Careers</li>
+                            <Link to='/careers'><li>Careers</li></Link>
                             <li>Support</li>
                             <li>LinkedIn</li>
                             <li>Twitter</li>
