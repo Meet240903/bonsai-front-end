@@ -1,0 +1,74 @@
+.top-section-main {
+    padding-top: 8rem;
+    padding-bottom: 32rem;
+    background-image: url('../../images/bonsaicash/hands_card.png'), url('../../images/bonsaicash/cover_background.png');
+    background-position: 50% 100%, 0 0;
+    background-size: contain, 100% 100%;
+    background-repeat: no-repeat, repeat;
+}
+
+.top-section-container {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 15px; /* Added padding for smaller screens */
+}
+
+.top-section-block {
+    max-width: 39rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-section-block p {
+    font-size: 18px;
+}
+
+.signup-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #00b289;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.signup-div {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-section-main {
+        padding-top: 6rem;
+        padding-bottom: 20rem;
+        background-size: 80%, 100%; /* Adjusted background size */
+    }
+
+    .top-section-block p {
+        font-size: 16px;
+    }
+
+    .signup-btn {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-section-main {
+        padding-top: 5rem;
+        padding-bottom: 15rem;
+        background-size: 60%, 100%; /* Further adjustment for smaller screens */
+        background-position: 50% 90%, 0 0;
+    }
+
+    .top-section-block p {
+        font-size: 14px;
+    }
+
+    .signup-btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

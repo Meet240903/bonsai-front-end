@@ -73,6 +73,13 @@ import featureInvoicesImg from '../assets/images/freelanceInvoices/Explore_invoi
 import featureProposalsImg from '../assets/images/freelanceInvoices/Explore_Proposals.svg'
 import featuretimetrackingImg from '../assets/images/freelanceTimeTracking/time_tracking.svg'
 import featuretaskmanagementImg from '../assets/images/freelanceTaskTracking/task_management.svg'
+import freelanceBonsaitaxImg from '../assets/images/freelaneBonsaiTax/graphic_accounting_taxes.png'
+import freelanceExpenceTrackImg from '../assets/images/freelaneBonsaiTax/expense tracking.svg'
+import freelanceLossImg from '../assets/images/freelaneBonsaiTax/loss.svg'
+import freelanceEstimateQuartlytaxeImg from '../assets/images/freelaneBonsaiTax/tax estimates.svg'
+import freelanceimportTrackExpImg from '../assets/images/freelaneBonsaiTax/Import_and_track_expenses.png'
+import freelanceIdentifyTaxWriteImg from '../assets/images/freelaneBonsaiTax/identify_tax_write.png'
+import freelanceEstimateQuartlyTaxe1Img from '../assets/images/freelaneBonsaiTax/Estimate_quarterly_taxes.png'
 
 const Footer = () => {
     const MiddleSectionTitleList = [
@@ -551,44 +558,44 @@ const Footer = () => {
         {
             title: 'Bonsai Tax',
             innerTitle: 'Ask Your Clients',
-            icon: faNewspaper,
+            icon: faReceipt,
             slugs: 'bonsai-tax',
             content: 'Create your own customized forms and questionnaires for clients and kicking off new projects',
             image: formsImg,
             freelanceTopSectionData: {
-                freelanceIcon: faNewspaper,
+                freelanceIcon: faReceipt,
                 freelanceTitle: 'Bonsai Tax',
                 freelanceInnerTitle: 'Software for freelancers to track 1099 expenses & keep a peace of mind at tax time',
                 freelanceInnerContent: 'Bonsai Tax is built exclusively for self-employed workers to track expenses, maximize tax write-offs, and estimate quarterly taxes',
-                freelanceInnerImg: freelanceFormsImg,
+                freelanceInnerImg: freelanceBonsaitaxImg,
             },
             freelanceServiceSectionData: {
                 mainTitle: 'Save an average of $5,600 per year and avoid surprise bills at tax time',
                 innerServiceData: [
                     {
                         serviceTitle: 'Track expenses',
-                        serviceImg: freelanceClientsProjectsImg,
+                        serviceImg: freelanceExpenceTrackImg,
                         serviceContent: 'Auto-imports expense from bank and credit cards, then classify and track them on web and mobile apps',
                     },
                     {
                         serviceTitle: 'Identify write-offs',
-                        serviceImg: freelanceFlexibleFieldsImg,
+                        serviceImg: freelanceLossImg,
                         serviceContent: 'Bonsai Tax automatically identifies expenses that are deductible to save you extra money at tax time',
                     },
                     {
                         serviceTitle: 'Estimate quarterly taxes',
-                        serviceImg: freelanceReusableFormsImg,
+                        serviceImg: freelanceEstimateQuartlytaxeImg,
                         serviceContent: 'Never get caught by a surprise tax bill again. Bonsai Tax analyzes your spending to estimate taxes due',
                     }
                 ],
                 outerServiceTitle1: 'Automate Expenses',
-                outerServiceImg1: freelanceIntegrateFormGraphicsImg,
+                outerServiceImg1: freelanceimportTrackExpImg,
                 outerServiceContent1: 'Connect your bank and credit / debit card accounts to automatically import and organize tax receipts',
                 outerServiceTitle2: 'Maximize Write-Offs',
-                outerServiceImg2: freelanceCustomizeFieldsGraphicsImg,
+                outerServiceImg2: freelanceIdentifyTaxWriteImg,
                 outerServiceContent2: 'Bonsai Tax is designed to identify and categorize receipts for taxes. So, our app can help you maximize your tax savings at the end of the year',
                 outerServiceTitle3: 'Estimate Quarterly Tax',
-                outerServiceImg3: freelanceEffectiveGraphicsImg,
+                outerServiceImg3: freelanceEstimateQuartlyTaxe1Img,
                 outerServiceContent3: 'Our tax software for freelancers uses your tracked income, expenses, and deductions to give you live estimates of the taxes you will owe',
                 contactContent: 'Start saving on taxes and get financial peace of mind.',
             },
@@ -630,6 +637,7 @@ const Footer = () => {
                                     </Link>
                                 ))
                             }
+                            <Link to='/bonsai-cash'><li>Bonsai Cash</li></Link>
                             <br /><br />
                             <Link to='/pricing'><li>Pricing</li></Link>
                             <Link to='/review'><li>Bonsai Reviews</li></Link>

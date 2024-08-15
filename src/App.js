@@ -13,6 +13,7 @@ import Freelance from './components/Freelance';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import About from './components/About';
 import Affiliates from './components/Affiliates';
+import BonsaiCash from './components/BonsaiCash';
 
 function App() {
   return (
@@ -87,6 +88,16 @@ function App() {
               <>
                 <Header />
                 <Affiliates />
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            path="/bonsai-cash"
+            element={
+              <>
+                <Header />
+                <BonsaiCash />
                 <Footer />
               </>
             }

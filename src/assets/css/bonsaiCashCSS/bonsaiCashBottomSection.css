@@ -1,0 +1,76 @@
+.bottom-section {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.bottom-img-relative {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.bottom-img-absolute {
+    position: absolute;
+    height: 100px;
+    right: -10%;
+    bottom: 45%;
+}
+
+.bottom-section-p {
+    font-size: 18px;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.bonsai-cash-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #00b289;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 10px 0 30px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .bottom-section-p {
+        width: 80%;
+    }
+
+    .bottom-img-relative {
+        max-width: 80%;
+    }
+
+    .bottom-img-absolute {
+        height: 50px;
+        right: 5%;
+        bottom: 10%;
+    }
+
+    .bonsai-cash-btn {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bottom-section-p {
+        width: 100%;
+    }
+
+    .bottom-img-relative {
+        max-width: 80%;
+    }
+
+    .bottom-img-absolute {
+        height: 40px;
+        right: 5%;
+        bottom: 30%;
+    }
+
+    .bonsai-cash-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
