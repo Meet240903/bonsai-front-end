@@ -13,7 +13,7 @@ const SignUp = () => {
                     <div className='col-md-5 signup-logo'>
                         <img src={bonsaiLogo} className='img-fluid' alt='bonsai-logo' />
                         <p>Join 500,000+ freelancers and agencies using Bonsai.</p>
-                        <div className='col-md-10 bottom-section'>
+                        <div className='col-md-10 bottom-section-signup'>
                             <FontAwesomeIcon icon={faQuoteLeftAlt} style={{color:'#00b289',fontSize:'24px'}}/>
                             <p style={{ fontSize: 'small' }}>Anyone doing #freelance work should use @bonsaiinc for contracts/payment. It's amazing and saves boatloads of time.</p>
                             <small>Nathanael Smith, Product Designer</small>

@@ -51,7 +51,7 @@
     text-align: left;
 }
 
-.bottom-section{
+.bottom-section-signup{
     margin-top: 140px;
 }
 /* HR lines and text */
@@ -142,7 +142,7 @@
     .signup-form h3 {
         text-align: center;
     }
-    .bottom-section{
+    .bottom-section-signup{
         margin-top: 0;
     }
 }
