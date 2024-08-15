@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/bonsai-front-end/static/css/main.9200cdd6.css",
-    "main.js": "/bonsai-front-end/static/js/main.c249a173.js",
+    "main.css": "/bonsai-front-end/static/css/main.af49a555.css",
+    "main.js": "/bonsai-front-end/static/js/main.86034227.js",
     "static/js/453.edafc35d.chunk.js": "/bonsai-front-end/static/js/453.edafc35d.chunk.js",
+    "static/media/bonsai-text-logo.png": "/bonsai-front-end/static/media/bonsai-text-logo.3535fce575430e055d79.png",
     "static/media/cover_background.png": "/bonsai-front-end/static/media/cover_background.8d35ac56d8241f9e002b.png",
     "static/media/hands_card.png": "/bonsai-front-end/static/media/hands_card.8d15ca4a0ddb0b41872b.png",
     "static/media/payment_img.png": "/bonsai-front-end/static/media/payment_img.eb70a67a86f0fb515a7b.png",
@@ -59,6 +60,7 @@
     "static/media/affiliate-partners.svg": "/bonsai-front-end/static/media/affiliate-partners.e24096c39f18eaba716ef56c8cd75b15.svg",
     "static/media/sign contract.png": "/bonsai-front-end/static/media/sign contract.fc072799039e5eb3c78c.png",
     "static/media/make-taxes-stress-free.jpeg": "/bonsai-front-end/static/media/make-taxes-stress-free.48b549efac6107c22da2.jpeg",
+    "static/media/bonsai-logo.jpg": "/bonsai-front-end/static/media/bonsai-logo.bee27448383f019deaf6.jpg",
     "static/media/globalbusiness.svg": "/bonsai-front-end/static/media/globalbusiness.bea25df0a5a9c067472c92ba066cedda.svg",
     "static/media/david-mihm.jpg": "/bonsai-front-end/static/media/david-mihm.d07c2c91d302a25b8e3b.jpg",
     "static/media/combinator_about.png": "/bonsai-front-end/static/media/combinator_about.b64e6f1c46eaeb544b3f.png",
@@ -114,12 +116,12 @@
     "static/media/time_tracking.svg": "/bonsai-front-end/static/media/time_tracking.9bbd83e101f5554d3cb3249e4d4597c9.svg",
     "index.html": "/bonsai-front-end/index.html",
     "static/media/faCheck.svg": "/bonsai-front-end/static/media/faCheck.6740ade18c674eb2916f596005517f5d.svg",
-    "main.9200cdd6.css.map": "/bonsai-front-end/static/css/main.9200cdd6.css.map",
-    "main.c249a173.js.map": "/bonsai-front-end/static/js/main.c249a173.js.map",
+    "main.af49a555.css.map": "/bonsai-front-end/static/css/main.af49a555.css.map",
+    "main.86034227.js.map": "/bonsai-front-end/static/js/main.86034227.js.map",
     "453.edafc35d.chunk.js.map": "/bonsai-front-end/static/js/453.edafc35d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9200cdd6.css",
-    "static/js/main.c249a173.js"
+    "static/css/main.af49a555.css",
+    "static/js/main.86034227.js"
   ]
 }
