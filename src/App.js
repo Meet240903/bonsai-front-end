@@ -16,6 +16,8 @@ import Affiliates from './components/Affiliates';
 import BonsaiCash from './components/BonsaiCash';
 import Careers from './components/Careers';
 import Job from './components/Job';
+import JobHeader from './components/JobHeader';
+import JobDetails from './components/JobDetails';
 
 function App() {
   return (
@@ -94,7 +96,7 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             path="/bonsai-cash"
             element={
               <>
@@ -114,11 +116,21 @@ function App() {
               </>
             }
           />
-           <Route
+          <Route
             path="/job"
             element={
               <>
+                <JobHeader />
                 <Job />
+              </>
+            }
+          />
+          <Route
+            path="/job-details/:slugs"
+            element={
+              <>
+                <JobHeader />
+                <JobDetails />
               </>
             }
           />
