@@ -29,9 +29,54 @@
     cursor: pointer;
     transition: color 0.3s ease;
     position: relative;
+    margin-bottom: 0;
 }
 
 .nav ul li:hover {
+    color: #00b289;
+}
+
+/*dropdown list*/
+.product-menu{
+    position: relative;
+}
+.dropdown-list{
+    position: absolute;
+    top:70px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 300px;
+    left: 25%;
+}
+
+.dropdown-content p{
+    font-size: 14px;
+    line-height: 1.3rem;
+    text-align: justify;
+}
+
+.dropdown-content:hover{
+    cursor: pointer;
+}
+
+.multi-dropdown-menu{
+    position: absolute;
+    top:0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: max-content;
+    width: max-content;
+    left: 100%;
+}
+
+.multi-dropdown-content{
+    padding: 10px;
+}
+.multi-dropdown-content:hover{
+    background-color: #fafafa;
+    cursor: pointer;
     color: #00b289;
 }
 
@@ -112,5 +157,32 @@
 
     .menu-toggle {
         display: block;
+    }
+    .dropdown-list{
+        position: relative;
+        top:0;
+        max-width: 200px;
+        left: 5%;
+        padding: 10px;
+    }
+    
+    .dropdown-content p,hr{
+        display: none;
+    }
+    .dropdown-content h4{
+        font-size: small;
+    }
+    .multi-dropdown-menu{
+        position: relative;
+        top:0;
+        padding: 0;
+        left: 0;
+        box-shadow: none;
+    }
+    .multi-dropdown-content{
+        padding-top: 0;
+    }
+    .multi-dropdown-content h6{
+        font-size: small;
     }
 }

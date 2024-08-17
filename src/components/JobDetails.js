@@ -38,7 +38,7 @@ const JobDetails = () => {
                             ))
                         }
                         {
-                            data?.aboutRole && <p className='fw-bold'>About the Role</p>
+                            data?.aboutRole && <p className='fw-bold my-4'>About the Role</p>
                         }
                         {
                             data?.aboutRole?.map((data, index) => (
