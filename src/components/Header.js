@@ -83,10 +83,16 @@ import featuretimetrackingImg from '../assets/images/freelanceTimeTracking/time_
 import featuretaskmanagementImg from '../assets/images/freelanceTaskTracking/task_management.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+//template section images
+import contractImg from '../assets/images/templates/contract.png'
+import invoiceImg from '../assets/images/templates/invoice.png'
+import templateimg from '../assets/images/templates/middleSectionImg.jpg'
+
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [dropdownMenu, setDropdownMenu] = useState(false);
     const [multiDropdownMenu, setMultiDropdownMenu] = useState(false);
+    const [templateDropDown, setTemplateDropDown] = useState(false);
     const dropdownRef = useRef(null);
     const MiddleSectionTitleList = [
         {
@@ -622,10 +628,461 @@ const Header = () => {
         ]
     }
 
+    const templateDropdownData = [
+        {
+            icon: faFileContract,
+            title: 'Contract Template',
+            slugs: 'contract-template',
+            templateTopSection: {
+                leftImage: contractImg,
+                rightImage: invoiceImg,
+                sectionTitle: 'Free Contract Templates',
+                sectionContent: 'Welcome to our gallery of editable contract templates. You can search by industry to find a contract template specifically for your freelance profession. All of our contract templates have been legally vetted by top lawyers.',
+            },
+            templateMiddleSection: [
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Executive Coaching Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Client Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Consultant',
+                    title: 'Business Consulting Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Mentoring Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Home Remodel Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Coach Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Health Coaching Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Sports Coach Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Business Coaching Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Life Coaching Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Engeneering Contract Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Remodel Contract Template',
+                },
+            ],
+        },
+        {
+            icon: faFileLines,
+            title: 'Proposals Template',
+            slugs: 'proposals-template',
+            templateTopSection: {
+                leftImage: contractImg,
+                rightImage: invoiceImg,
+                sectionTitle: 'Free Proposal Templates',
+                sectionContent: 'Welcome to our gallery of proposal templates. You can search by industry to find a proposal template specifically for your freelance profession.',
+                buttonContent: 'START CREATING YOUR PROPOSAL',
+            },
+            templateMiddleSection: [
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Executive Coaching Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Client Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Consultant',
+                    title: 'Business Consulting Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Mentoring Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Home Remodel Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Coach Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Health Coaching Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Sports Coach Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Business Coaching Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Life Coaching Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Engeneering Proposals Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Remodel Proposals Template',
+                },
+            ],
+        },
+        {
+            icon: faFileInvoiceDollar,
+            title: 'Invoice Template',
+            slugs: 'invoice-template',
+            templateTopSection: {
+                leftImage: contractImg,
+                rightImage: invoiceImg,
+                sectionTitle: 'Free Invoice Templates',
+                sectionContent: 'Welcome to our gallery of invoice templates. You can search by industry to find an invoice template specifically for your freelance profession.',
+                buttonContent: 'START CREATING YOUR INVOICE',
+            },
+            templateMiddleSection: [
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Executive Coaching Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Client Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Consultant',
+                    title: 'Business Consulting Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Mentoring Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Home Remodel Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Coach Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Health Coaching Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Sports Coach Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Business Coaching Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Life Coaching Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Engeneering Invoice Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Remodel Invoice Template',
+                },
+            ],
+        },
+        {
+            icon: faFileContract,
+            title: 'Agreement Template',
+            slugs: 'agreement-template',
+            templateTopSection: {
+                leftImage: contractImg,
+                rightImage: invoiceImg,
+                sectionTitle: 'Free Agreement Templates',
+                sectionContent: 'Welcome to our gallery of agreement templates. You can search by industry to find an agreement template specifically for your freelance profession.',
+                buttonContent: 'START CREATING YOUR AGREEMENT',
+            },
+            templateMiddleSection: [
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Executive Coaching Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Client Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Consultant',
+                    title: 'Business Consulting Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Mentoring Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Home Remodel Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Coach Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Health Coaching Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Sports Coach Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Business Coaching Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Life Coaching Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Engeneering Agreement Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Remodel Agreement Template',
+                },
+            ],
+        },
+        {
+            icon: faFileLines,
+            title: 'Quote Template',
+            slugs: 'quote-template',
+            templateTopSection: {
+                leftImage: contractImg,
+                rightImage: invoiceImg,
+                sectionTitle: 'Free Quote Templates',
+                sectionContent: 'Welcome to our gallery of quote templates. You can search by industry to find an quote template specifically for your freelance profession.',
+                buttonContent: 'START EDITING YOUR QUOTE',
+            },
+            templateMiddleSection: [
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Executive Coaching Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Client Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Consultant',
+                    title: 'Business Consulting Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Mentoring Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Home Remodel Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Coach Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Health Coaching Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Sports Coach Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Business Coaching Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Life Coaching Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Engeneering Quote Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Remodel Quote Template',
+                },
+            ],
+        },
+        {
+            icon: faClock,
+            title: 'Scope of work Template',
+            slugs: 'sow-template',
+            templateTopSection: {
+                leftImage: contractImg,
+                rightImage: invoiceImg,
+                sectionTitle: 'Free Scope of Work Templates',
+                sectionContent: 'Welcome to our gallery of scope of work templates. You can search by industry to find a scope of work template specifically for your freelance profession.',
+                buttonContent: 'START CREATING YOUR SOW',
+            },
+            templateMiddleSection: [
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Executive Coaching SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Client SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Consultant',
+                    title: 'Business Consulting SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Mentoring SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Home Remodel SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Coach SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Health Coaching SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Sports Coach SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Business Coaching SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Coach',
+                    title: 'Life Coaching SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Engeneering SOW Template',
+                },
+                {
+                    middleImg: templateimg,
+                    label: 'Architech',
+                    title: 'Remodel SOW Template',
+                },
+            ],
+        },
+        {
+            icon: faFileLines,
+            title: 'Brief Template'
+        },
+    ]
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
         setDropdownMenu(false);
         setMultiDropdownMenu(false);
+        setTemplateDropDown(false);
     };
 
     return (
@@ -639,7 +1096,7 @@ const Header = () => {
                 <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <li className='product-menu'
-                            onMouseEnter={() => setDropdownMenu(true)}
+                            onMouseEnter={() => { setDropdownMenu(true); setTemplateDropDown(false) }}
                             onClick={() => { setDropdownMenu(!dropdownMenu); setMultiDropdownMenu(false) }}
                             ref={dropdownRef}>
                             Product
@@ -660,7 +1117,7 @@ const Header = () => {
                                                         pathname: `/freelance/${data.slugs}`,
                                                     }}
                                                     state={{ data }}  // Pass the data object as state
-                                                    onClick={() => {setDropdownMenu(false);setMultiDropdownMenu(false)}}
+                                                    onClick={() => { setDropdownMenu(false); setMultiDropdownMenu(false) }}
                                                 >
                                                     <div className='multi-dropdown-content' key={index}>
                                                         <h6><FontAwesomeIcon icon={data?.icon} />&nbsp;&nbsp; {data?.title}</h6>
@@ -696,9 +1153,34 @@ const Header = () => {
                                 </Link>
                             </div>
                         }
-                        <li>Templates</li>
-                        <Link to="/pricing" onClick={() => setDropdownMenu(false)}><li>Pricing</li></Link>
-                        <Link to="/review" onClick={() => setDropdownMenu(false)}><li>Reviews</li></Link>
+                        <li className='template-menu'
+                            onMouseEnter={() => { setTemplateDropDown(true); setDropdownMenu(false) }}
+                            onClick={() => setTemplateDropDown(!templateDropDown)}
+                        >
+                            Templates
+                        </li>
+                        {
+                            templateDropDown &&
+                            <div className='template-dropdown-list'>
+                                {
+                                    templateDropdownData?.map((data, index) => (
+                                        <Link
+                                            to={{
+                                                pathname: `/templates/${data.slugs}`,
+                                            }}
+                                            state={{ data }}  // Pass the data object as state
+                                            onClick={()=>setTemplateDropDown(false)}
+                                        >
+                                            <div className='template-dropdown-content' key={index}>
+                                                <p><FontAwesomeIcon icon={data?.icon} />&nbsp;&nbsp;{data?.title}</p>
+                                            </div>
+                                        </Link>
+                                    ))
+                                }
+                            </div>
+                        }
+                        <Link to="/pricing" onClick={() => { setDropdownMenu(false); setTemplateDropDown(false) }}><li>Pricing</li></Link>
+                        <Link to="/review" onClick={() => { setDropdownMenu(false); setTemplateDropDown(false) }}><li>Reviews</li></Link>
                     </ul>
                 </nav>
                 <div className="header-buttons">

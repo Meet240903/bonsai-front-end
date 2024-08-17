@@ -1,0 +1,29 @@
+.template-top-images{
+    height: 300px;
+    width: 300px;
+}
+
+.template-top-content{
+    text-align: center;
+}
+
+.template-top-content p{
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.template-top-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #009977;
+    color: #fff;
+    padding: 10px;
+}
+
+.arrow-btn{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #009977;
+    color: #009977;
+    background-color: #fff;
+}

@@ -18,6 +18,7 @@ import Careers from './components/Careers';
 import Job from './components/Job';
 import JobHeader from './components/JobHeader';
 import JobDetails from './components/JobDetails';
+import Templates from './components/Templates';
 
 function App() {
   return (
@@ -131,6 +132,16 @@ function App() {
               <>
                 <JobHeader />
                 <JobDetails />
+              </>
+            }
+          />
+           <Route
+            path="/templates/:slugs"
+            element={
+              <>
+                <Header />
+                <Templates />
+                <Footer />
               </>
             }
           />
