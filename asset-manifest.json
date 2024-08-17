@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bonsai-front-end/static/css/main.eefffb53.css",
-    "main.js": "/bonsai-front-end/static/js/main.b15c9d67.js",
+    "main.css": "/bonsai-front-end/static/css/main.b46cfbb8.css",
+    "main.js": "/bonsai-front-end/static/js/main.37e35c80.js",
     "static/js/453.edafc35d.chunk.js": "/bonsai-front-end/static/js/453.edafc35d.chunk.js",
     "static/media/bonsai-text-logo.png": "/bonsai-front-end/static/media/bonsai-text-logo.3535fce575430e055d79.png",
     "static/media/cover_background.png": "/bonsai-front-end/static/media/cover_background.8d35ac56d8241f9e002b.png",
@@ -21,8 +21,9 @@
     "static/media/be_more_effective_graphic.png": "/bonsai-front-end/static/media/be_more_effective_graphic.93b131dcbb34c910a99f.png",
     "static/media/integrate_your_forms_graphic.png": "/bonsai-front-end/static/media/integrate_your_forms_graphic.1ed1fa96b76bde271d46.png",
     "static/media/new_card_payment_graphic.png": "/bonsai-front-end/static/media/new_card_payment_graphic.affadc3ca1d8f542e30d.png",
+    "static/media/middleSectionImg.jpg": "/bonsai-front-end/static/media/middleSectionImg.473f5928e94b35f9ef7c.jpg",
     "static/media/forms_graphic.png": "/bonsai-front-end/static/media/forms_graphic.784b978e5813373bf14b.png",
-    "static/media/contract.png": "/bonsai-front-end/static/media/contract.58f68883b0e2743172ab.png",
+    "static/media/contract.png": "/bonsai-front-end/static/media/contract.13988c044cc7c5a85f33.png",
     "static/media/payment-methods.png": "/bonsai-front-end/static/media/payment-methods.4479df4c9ebda9259aad.png",
     "static/media/bonsai-crm.png": "/bonsai-front-end/static/media/bonsai-crm.634bd6d442ed968dea39.png",
     "static/media/tm-graphic.png": "/bonsai-front-end/static/media/tm-graphic.55a6ab846d6bfdb08d34.png",
@@ -45,6 +46,7 @@
     "static/media/graphic_fee structure.png": "/bonsai-front-end/static/media/graphic_fee structure.2ef9e583be95208cc661.png",
     "static/media/graphic_Protect_Your_Business.png": "/bonsai-front-end/static/media/graphic_Protect_Your_Business.fea7879b825109d874aa.png",
     "static/media/timer_graphic.png": "/bonsai-front-end/static/media/timer_graphic.ab6e60a7c05400f790a1.png",
+    "static/media/invoice.png": "/bonsai-front-end/static/media/invoice.5c314c6ea5e2004e996d.png",
     "static/media/timetracking.png": "/bonsai-front-end/static/media/timetracking.1bd5f06de3a0c794681d.png",
     "static/media/clientcrm.png": "/bonsai-front-end/static/media/clientcrm.c576f804253c9022a84f.png",
     "static/media/active_tasks.png": "/bonsai-front-end/static/media/active_tasks.186e6548434002710981.png",
@@ -66,7 +68,6 @@
     "static/media/combinator_about.png": "/bonsai-front-end/static/media/combinator_about.b64e6f1c46eaeb544b3f.png",
     "static/media/index_ventures_about.png": "/bonsai-front-end/static/media/index_ventures_about.0ede98ea5b0f5e6fcdc9.png",
     "static/media/Flexible_Fields.svg": "/bonsai-front-end/static/media/Flexible_Fields.713847d3c22927eddbdf09c8d0a977b4.svg",
-    "static/media/invoice.png": "/bonsai-front-end/static/media/invoice.5c314c6ea5e2004e996d.png",
     "static/media/matrix_about.png": "/bonsai-front-end/static/media/matrix_about.75fc510e0ebe06413127.png",
     "static/media/Project_Organization.svg": "/bonsai-front-end/static/media/Project_Organization.51d25c0c99e980032992a961e6f5703d.svg",
     "static/media/Pro_Features.svg": "/bonsai-front-end/static/media/Pro_Features.5e469388fc7a086ac2786b6d8c3a2cb7.svg",
@@ -116,12 +117,12 @@
     "static/media/time_tracking.svg": "/bonsai-front-end/static/media/time_tracking.9bbd83e101f5554d3cb3249e4d4597c9.svg",
     "index.html": "/bonsai-front-end/index.html",
     "static/media/faCheck.svg": "/bonsai-front-end/static/media/faCheck.6740ade18c674eb2916f596005517f5d.svg",
-    "main.eefffb53.css.map": "/bonsai-front-end/static/css/main.eefffb53.css.map",
-    "main.b15c9d67.js.map": "/bonsai-front-end/static/js/main.b15c9d67.js.map",
+    "main.b46cfbb8.css.map": "/bonsai-front-end/static/css/main.b46cfbb8.css.map",
+    "main.37e35c80.js.map": "/bonsai-front-end/static/js/main.37e35c80.js.map",
     "453.edafc35d.chunk.js.map": "/bonsai-front-end/static/js/453.edafc35d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eefffb53.css",
-    "static/js/main.b15c9d67.js"
+    "static/css/main.b46cfbb8.css",
+    "static/js/main.37e35c80.js"
   ]
 }
