@@ -87,6 +87,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contractImg from '../assets/images/templates/contract.png'
 import invoiceImg from '../assets/images/templates/invoice.png'
 import templateimg from '../assets/images/templates/middleSectionImg.jpg'
+import createAccImg from '../assets/images/templates/Contract/acc-first-img.png'
+import createContractImg from '../assets/images/templates/Contract/create_contract.png'
+import ChooseIndustryImg from '../assets/images/templates/Contract/choose-your-industry.png'
+import ProjectDetImg from '../assets/images/templates/Contract/add_project_details.png'
+import BasicInfoImg from '../assets/images/templates/Contract/basic_info.png'
+import SoWImg from '../assets/images/templates/Contract/scope_of_work.png'
+import PaymentImg from '../assets/images/templates/Contract/payment.png'
+import InvoiceImg from '../assets/images/templates/Contract/integrate_invoices.png'
+import SignContractImg from '../assets/images/templates/Contract/sign_contract.png'
+import DownloadPDFImg from '../assets/images/templates/Contract/download_PDF.png'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -701,6 +711,402 @@ const Header = () => {
                     title: 'Remodel Contract Template',
                 },
             ],
+            tableOfContent: [
+                {
+                    mainTitle: 'What is a contract template?',
+                    contentList: [
+                        {
+                            content: 'A contract is a legally binding agreement between you and your client. It’s as simple as that.',
+                        },
+                        {
+                            content: 'A contract template is basically the draft version of the contract, with all your needs and requirements preloaded onto it (which you’ll be easily able to edit later on).',
+                        },
+                        {
+                            content: 'With sections stating your job description, the intended work you’ll do, your payment details, and any other descriptives or legal requirements needed, a contract template is a must-have for freelancers and their clients to stay protected.',
+                        },
+                        {
+                            content: 'Sounds easy, right? It doesn’t take a law firm to create a simple contract template.',
+                        },
+                        {
+                            content: 'The real value here is that a contract template will save you a lot of time and effort when you’re negotiating with a new client. This means you can spend more time doing what actually makes you passionate, instead of the negotiations and the paperwork.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'What information should be included in a contract?',
+                    contentList: [
+                        {
+                            content: "Before you begin writing your own contract, you should always seek legal advice to make sure what you're making is actually a legally binding document.",
+                        },
+                        {
+                            content: "That being said, every basic and formal contract should include these essential elements:",
+                            innerContentList: [
+                                {
+                                    innerTitle: "1. WORK AND PAYMENT",
+                                    childContent: [
+                                        {
+                                            content: "For the work and payment details section, you’ll want to include details on:",
+                                        },
+                                        {
+                                            title: 'Project or job description',
+                                            content: "This will include an outline of your full services for the client.",
+                                        },
+                                        {
+                                            title: 'Timeframe of the contract',
+                                            content: "You should detail your start and end date, as well as any service times. For example, a wedding photographer will want to state when they’ll arrive and when their breaks are throughout the day.",
+                                        },
+                                        {
+                                            title: 'Payment details',
+                                            content: "Here you’ll state what the client is paying you (whether that’s a flat fee, per hour, or something else), your payment schedule, as well as any deposits before the work starts. It’s common for a wedding photography contract to include any cancellation fees or non-refundable deposits.",
+                                        },
+                                        {
+                                            title: 'Expenses',
+                                            content: "You may need to travel, rent a hotel, or even purchase new clothes so you abide by a dress code for the job. Outline if the client is required to reimburse you for any expenses.",
+                                        },
+                                        {
+                                            title: 'Invoice details',
+                                            content: "Include how and when you’ll invoice the client. Outline when the due date is and any incurring late fees should they miss it.",
+                                        },
+                                        {
+                                            title: 'Support',
+                                            content: "You’ll want to agree on how much (if at all) support is provided to the client once the job is done. This can include editing or touching up photos if you’re a wedding photographer.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "2. OWNERSHIP AND LICENSES",
+                                    childContent: [
+                                        {
+                                            content: "This section should include details on:",
+                                        },
+                                        {
+                                            title: 'The client’s ownership of the work product',
+                                            content: "This will be a detailed section stating that the client owns the final work product. You’ll want to agree on what that includes and when the client obtains ownership.",
+                                        },
+                                        {
+                                            title: 'Your usage of the work product',
+                                            content: "As freelancers, you can state any permissions the client gives you for using the final product. As a wedding photographer, you’ll want to have permission to showcase photos in your portfolio.",
+                                        },
+                                        {
+                                            title: 'Help you provide secure ownership',
+                                            content: "This section is for when the client needs your help to prove the product is theirs. You should agree that you’ll help the client secure ownership and if you aren’t available to help, the client can speak on your behalf.",
+                                        },
+                                        {
+                                            title: 'Your intellectual property and usage',
+                                            content: "Include details on intellectual property (IP) usage permissions and ownership.",
+                                        },
+                                        {
+                                            title: 'The client’s intellectual property and usage',
+                                            content: "Similar to the section above, the client also has IP that you may use as long as they give permission. This could include using their logo on your portfolio.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "3. COMPETITIVE ENGAGEMENTS",
+                                    childContent: [
+                                        {
+                                            content: "Include a statement about any restrictions working with close competitors for the duration of the contract. Outline any partnership agreements you may have.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "4. NON-SOLICITATION",
+                                    childContent: [
+                                        {
+                                            content: "You’ll want to outline any non-solicitation clauses here for you and the client.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "5. REPRESENTATIONS",
+                                    childContent: [
+                                        {
+                                            content: "For a legally binding document, you should include a representations section which will cover:",
+                                        },
+                                        {
+                                            title: 'Who has the authority to sign',
+                                            content: "Basically, a statement that promises both parties to have the authority to sign.",
+                                        },
+                                        {
+                                            title: 'The right to use the intellectual property involved with the final product',
+                                            content: "Explain that the parties involved (including any independent contractors or subcontractors) have the right to use the IP involved with creating the final product.",
+                                        },
+                                        {
+                                            title: 'You comply with law',
+                                            content: "State that you promise to comply with the laws of the country that you are in.",
+                                        },
+                                        {
+                                            title: 'The final product doesn’t infringe',
+                                            content: "A promise that the final product doesn’t infringe on another party's IP.",
+                                        },
+                                        {
+                                            title: 'The client promises to provide feedback',
+                                            content: "Make a state about the client promising to give you feedback on the final product in a timely manner.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "6. TERMS AND TERMINATION",
+                                    childContent: [
+                                        {
+                                            content: "This section will detail the terms and conditions around the termination of the contract. This could be on a particular date or after the completion of a specific project.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "7. INDEPENDENT CONTRACTOR",
+                                    childContent: [
+                                        {
+                                            content: "Add in the details about the working relationship between you, as a freelancer or independent contractor, and the client. This can include things like whether or not you use your own equipment, if you’re provided training, or any tax responsibilities.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "8. CONFIDENTIAL INFORMATION",
+                                    childContent: [
+                                        {
+                                            content: "Here you’ll explain the access and handling of confidential information between the two (or more) parties.",
+                                        },
+                                        {
+                                            content: "Remember to add what kind of permission you and your client give and do not give each other.",
+                                        },
+                                        {
+                                            content: "We recommend seeking legal advice for this section of the contract, as it can be very detailed and need specialist input.",
+                                        },
+                                        {
+                                            title: 'The client’s confidential information',
+                                            content: "Here you should determine what happens when you or the client come across each other’s confidential information. You'll also want to add any non-disclosure agreements here too, which would be helpful for protecting a company's trade secrets.",
+                                        },
+                                        {
+                                            title: 'Third-party confidential information',
+                                            content: "This is similar to the above clause, where you’ll mention the same or similar agreements should you come across the confidential information of a third party.",
+                                        },
+                                        {
+                                            title: 'You comply with law',
+                                            content: "State that you promise to comply with the laws of the country that you are in.",
+                                        },
+                                        {
+                                            title: 'The final product doesn’t infringe',
+                                            content: "A promise that the final product doesn’t infringe on another party's IP.",
+                                        },
+                                        {
+                                            title: 'The client promises to provide feedback',
+                                            content: "Make a state about the client promising to give you feedback on the final product in a timely manner.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "9. LIMITATION OF LIABILITY",
+                                    childContent: [
+                                        {
+                                            content: "Here is a short statement basically explaining that neither party is liable if the other breaches the contract unknowingly.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "10. INDEMNITY",
+                                    childContent: [
+                                        {
+                                            content: "This section involves legal protections and other formalities. You’ll want to state that if one party is fined or sued then there is no liability, damages, or expenses pushed onto the other party (you or the client).",
+                                        },
+                                        {
+                                            content: "Remember to have two sections, one for each party involved.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "11. GENERAL",
+                                    childContent: [
+                                        {
+                                            content: "This is a general overview of the contract agreement itself, which should include:",
+                                        },
+                                        {
+                                            title: 'Assigning rights',
+                                            content: "This statement is around the obligations of giving the contract over to another party should it need to happen.",
+                                        },
+                                        {
+                                            title: 'Arbitration',
+                                            content: "If a dispute between the parties involved can be resolved through arbitration.",
+                                        },
+                                        {
+                                            title: 'Modifications or waivers',
+                                            content: "If anything has to change in this legal document, both parties must agree to it in writing.",
+                                        },
+                                        {
+                                            title: 'Notices terms',
+                                            content: "State all the terms and conditions around giving notice.",
+                                        },
+                                        {
+                                            title: 'Severability',
+                                            content: "This explains what happens should there be any unenforceable parts of the contract.",
+                                        },
+                                        {
+                                            title: 'Signature terms',
+                                            content: "How both parties will be agreeing to sign the contract and what counts as an original copy.",
+                                        },
+                                        {
+                                            title: 'Governing law',
+                                            content: "A quick statement explaining that the contract is under the law of the governing body involved.",
+                                        },
+                                        {
+                                            title: 'Contract validity',
+                                            content: "A short sentence underlining the validity of the contract.",
+                                        },
+                                    ]
+                                },
+                                {
+                                    innerTitle: "12. SIGNATURES & DATE",
+                                    childContent: [
+                                        {
+                                            content: "In this section, both parties will add their signatures agreeing to the terms of the contract.",
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How many copies of a contract do I need?',
+                    contentList: [
+                        {
+                            content: 'You and your client should both have at least one copy of the originally signed contract and any formal documentation when required. Whether it’s an independent contractor agreement, partnership agreement, simple lease agreement, cleaning services agreement or rental agreement, any legally binding contract should be held by both parties in its original form. Photocopies are also a good idea – you never know when your original copy may be lost.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Do I need a lawyer or a notary?',
+                    contentList: [
+                        {
+                            content: 'Remember that for any major services or deals you should always include a lawyer or a notary. However, depending on the type of work you do, legal counsel isn’t always necessary when it comes to independent contractor contracts.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How to create your contract',
+                    contentList: [
+                        {
+                            content: 'Below is a step-by-step guide on how to create your contract.',
+                        },
+                    ]
+                },
+            ],
+            accordianData: [
+                {
+                    title: "Create an account",
+                    contentList: [
+                        {
+                            content: "First, set up a Bonsai account. The only information you need to enter is your name and email address.",
+                        },
+                    ],
+                    accordianImg: createAccImg,
+                },
+                {
+                    title: "Click on 'create contract'",
+                    contentList: [
+                        {
+                            content: "Once signed into Bonsai, you can jump right into creating a contract by going to your Dashboard and choosing create a contract.",
+                        },
+                    ],
+                    accordianImg: createContractImg,
+                },
+                {
+                    title: "Choose your industry",
+                    contentList: [
+                        {
+                            content: "That takes you right to the first step in creating a contract, including a drop-down menu where you select your industry.",
+                        },
+                    ],
+                    accordianImg: ChooseIndustryImg,
+                },
+                {
+                    title: "Fill in the project details",
+                    contentList: [
+                        {
+                            content: "Make sure you also insert a client name, type of project, choosing standard template, and then selecting template type. For this example, we are using a sample client, and a blog post contract template for a freelance writing business.",
+                        },
+                    ],
+                    accordianImg: ProjectDetImg,
+                },
+                {
+                    title: "Enter basic information",
+                    contentList: [
+                        {
+                            content: "The next step will walk you through information for the contract, starting with your location, including which state in the United States.",
+                        },
+                        {
+                            content: "You select whether you work through a company, and if you do, there are different company structures from which to choose, and then you insert the company name and your title.",
+                        },
+                    ],
+                    accordianImg: BasicInfoImg,
+                },
+                {
+                    title: "Describe the scope of work",
+                    contentList: [
+                        {
+                            content: "Based on the choice of a writer doing a blog post, this section is auto-populated, but you can easily change the contents to describe what you will be doing for the client.",
+                        },
+                        {
+                            content: "You can also attach a statement of work, which is another time-saver. You can have a variety of your standard work tasks saved and ready to be attached, which makes the contracts simple and easy to do, and any in-depth details about the work can be in the statement of work document.",
+                        },
+                    ],
+                    accordianImg: SoWImg,
+                },
+                {
+                    title: "Include payment details",
+                    contentList: [
+                        {
+                            content: "You can choose from a multitude of payment options, including a flat fee, milestones, and hourly, daily, weekly and monthly rates.",
+                        },
+                        {
+                            content: "If you choose milestones, for instance, you then add the amount and add the milestone dates, with the option to add as many as you need. If you choose hourly, you insert your rate. It’s so simple and flexible.",
+                        },
+                    ],
+                    accordianImg: PaymentImg,
+                },
+                {
+                    title: "Integrate your invoices",
+                    contentList: [
+                        {
+                            content: "In the final step, you reap even greater benefits from the Bonsai system, because the contract you just created, complete with payment terms, is integrated with an invoicing system. That means your invoices are already done based on the contract.",
+                        },
+                        {
+                            content: "You have the flexibility to decide whether or not you want the system to create the invoices, and whether or not you want them sent automatically. As stated, you can always review and edit them before they’re sent.",
+                        },
+                    ],
+                    accordianImg: InvoiceImg,
+                },
+                {
+                    title: "Sign the contract",
+                    contentList: [
+                        {
+                            content: "Once you’ve made all the edits and you’re ready to finalize the contract, sign contract is the final step.",
+                        },
+                        {
+                            content: "Then, you will simply type in your name, and a signature is created with your email address below it.",
+                        },
+                        {
+                            content: "You’re then ready to send the contract to your client. When they receive it, there’s a section for them to sign next to your e-signature, with the legal binding statement that means it’s official. You can start your work.",
+                        },
+                    ],
+                    accordianImg: SignContractImg,
+                },
+                {
+                    title: "Save as PDF",
+                    contentList: [
+                        {
+                            content: "But you can do more, by choosing the More Options drop-down menu. If you haven’t yet sent the contract, you can un-sign it and edit it. You can duplicate it, delete it, and download it as a PDF.",
+                        },
+                        {
+                            content: "If you choose View Project, you’ll get a dashboard that displays an overview, including the client’s name, invoices, time tracking and more.",
+                        },
+                        {
+                            content: "And, perhaps best of all, you can turn this contract into a contract template. Then you’ll be able to use this work time and again, for various clients and projects.",
+                        },
+                    ],
+                    accordianImg: DownloadPDFImg,
+                },
+            ]
         },
         {
             icon: faFileLines,
@@ -775,6 +1181,411 @@ const Header = () => {
                     title: 'Remodel Proposals Template',
                 },
             ],
+            tableOfContent: [
+                {
+                    mainTitle: 'What Are Proposal Templates?',
+                    contentList: [
+                        {
+                            content: 'A proposal template is the skeleton document you adapt to win business from new and existing clients. Your proposal template includes all the specific information your prospective client needs to know how you will solve their challenges, and the goals you want to accomplish with them. All you need to do is adapt your proposal template for each client.',
+                        },
+                        {
+                            content: 'With business proposals, you introduce who you are, what your business does, and what you’ve achieved. You also run through the details of what you’re planning to accomplish for your potential client. Proposals can look however you need them to, they can be a fully-fledged business plan, a design proposal, or even a marketing proposal—it depends on what you do.',
+                        },
+                        {
+                            content: 'Proposal templates are a great way to streamline and improve your proposal workflow. Having a proposal template on standby makes your life easier, business ops smoother, and ultimately helps you close more business.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Why Use a Proposal Template?',
+                    contentList: [
+                        {
+                            content: "There are some obvious reasons why you should use a templated proposal:",
+                            contentUlList: [
+                                {
+                                    content: "Creating a reusable document saves precious time and energy",
+                                },
+                                {
+                                    content: "It allows you to be consistent with your tone and messaging",
+                                },
+                                {
+                                    content: "You can add your branding to the document, to make you look more professional than the competition",
+                                },
+                                {
+                                    content: "It provides clarity to your prospective client, laying out exactly what you can do, the duration, and how much it will cost",
+                                },
+                                {
+                                    content: "You can track and monitor the pitches you send, adjusting as you go, rather than starting from scratch each and every time",
+                                },
+                            ]
+                        },
+                        {
+                            content: "But a proposal is so much more than simply a list of your services with prices attached.",
+                        },
+                        {
+                            content: "Firstly, it’s your opportunity to lay the groundwork for a potentially fruitful working relationship. By using a proposal template, you get to establish smooth lines of communication, define expectations, and demonstrate that you understand the needs, goals, and ideas of the client.",
+                        },
+                        {
+                            content: "That last part is crucial because, if you’re responding to an RFP (“request for proposal” — sometimes called a “request for pitch”) you need to show that you’ve read and understood the initial brief. If you can’t do that, you’ve fallen at the first hurdle.",
+                        },
+                        {
+                            content: "Then there’s the aesthetics. Your proposal should be an extension of your brand, and, as Jeff Bezos said, “your brand is what other people say about you when you’re not in the room.”",
+                        },
+                        {
+                            content: "By using a proposal template, you can control how your brand is perceived every time you pitch for new work. And by positioning yourself right, you can charge higher rates and work with a better quality of client.",
+                        },
+                        {
+                            content: "Finally, your proposal can act as a framework for your contract. It’s your chance to clear up any misunderstandings, ask the right questions, and (importantly) get the answers to those questions.",
+                        },
+                        {
+                            content: "Once your prospect accepts your proposal, you can then take the milestones and costs they’ve approved, and simply sweep them into your contract. Seamless.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: '8 Common Mistakes to Avoid While Using Proposal Templates',
+                    contentList: [
+                        {
+                            content: 'While it’s undoubtedly true that using a proposal template can speed things up when it comes to pitching for new work, there are still some pitfalls you need to avoid.',
+                        },
+                        {
+                            content: 'By understanding what these are, you can tweak your template to make sure you aren’t making common mistakes. That’s the downside to a template — if one error slips the net, you’ll end up repeating it every time you make a new proposal.',
+                        },
+                        {
+                            content: 'Luckily, at Bonsai, we’ve worked with over 150,000 freelancers, many of whom are firmly in the top 1% when it comes to earnings and reputation.',
+                        },
+                        {
+                            content: 'We’ve asked them to share their top mistakes, and how best to avoid them:',
+                        },
+                    ],
+                    mistakeList: [
+                        {
+                            mistakeTitle: "Placing too much focus on your experience.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers get this wrong when writing a proposal. They get so swept up in selling themselves that they forget what it is their prospect wants to know: “How can you help me?”"
+                                },
+                                {
+                                    content: "Yes, it’s important to instil confidence that you’re the right person for the job. But don’t drone on about all your accomplishments and experiences. Make it clear and concise that you know what you’re doing, then move onto the task at hand, which is, of course, selling the solution."
+                                },
+                                {
+                                    content: "In short, make sure your proposal isn’t all about you. A short blurb and a few bullet points should be enough to capture all the relevant info."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Being too salesy.",
+                            contentList: [
+                                {
+                                    content: "The flipside to mistake number one is that some freelancers tend to overcorrect. Instead of talking about themselves, they jump straight into sales mode, which can set the wrong tone from the outset."
+                                },
+                                {
+                                    content: "Most successful freelancer-client relationships come about due to the fact that they’re framed as partnerships. You’re going to work together to overcome these challenges and deliver results."
+                                },
+                                {
+                                    content: "To do this, you need to make a connection with your words. You need to treat your prospect as a human being, build trust, and get to know them better. If you fail to do this, you can come across as a sleazy salesperson trying to make a quick buck, rather than a focused freelancer who truly cares about their client’s goals."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the same cover letter over and over.",
+                            contentList: [
+                                {
+                                    content: "Another downside to using a template is the temptation to write something once and never change it. This is especially true of your cover letter. While other parts of your template can stay the same, you should spend some time tweaking (or rewriting) your cover letter to make sure it meets the client’s expectations."
+                                },
+                                {
+                                    content: "It’s your opportunity to demonstrate that you’ve read and understood the brief, setting the tone for the rest of the proposal. If it appears generic, there’s a good chance your pitch will be dismissed, no matter how good your proposed solution."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Sending long proposals.",
+                            contentList: [
+                                {
+                                    content: "By now, it’s probably apparent that the key to a successful freelance proposal is balance. You might think that pouring hours into creating the perfect proposal will enhance your chances of winning the bid, but in most cases, the opposite is true."
+                                },
+                                {
+                                    content: "If you make your proposal too long, you’ll fail to engage your prospect. Short and to the point will almost always win the day. Remember, you’ll have plenty of time to dig into the detail when you win the job. This is about making a quick and meaningful connection — not writing War and Peace."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Not sending a proposal quickly.",
+                            contentList: [
+                                {
+                                    content: "You’d think this would be a slam dunk when you’ve got a proposal template at your fingertips. And yet, some freelancers are still slow out the blocks when it comes to sending a proposal."
+                                },
+                                {
+                                    content: "When a potential client reaches out, whether it’s informally through social media or via your website, or formally with an RFP, chances are they’re excited to get going. They’ve got an idea, and they need your expert help to make it happen."
+                                },
+                                {
+                                    content: "If you’re slow in sending your proposal, you’re effectively failing to match their excitement, and that’ll show. Clients want to work with freelancers who want to work with them."
+                                },
+                                {
+                                    content: "Don’t allow the fact that you’ve got a template to lure you into a false sense of security where time is concerned! Your competition won’t hang around. Snap to it."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the wrong language around price.",
+                            contentList: [
+                                {
+                                    content: "This is something the top 1% nail time and again — value language. When you’re creating the pricing section of your freelance proposal, it’s your opportunity to frame the tricky subject of cost in a positive light. By using the word “investment”, you’re moving the focus away from “money spent” to “money invested”."
+                                },
+                                {
+                                    content: "It really is that simple. With one minor switch, you’re able to provoke a different psychological response. An “investment” suggests that they’ll see benefits or results, whereas “cost” is simply money out the door with nothing in return."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Failing to highlight ROI (return on investment).",
+                            contentList: [
+                                {
+                                    content: "Just because you’ve tweaked the language in your pricing section, don’t assume that every potential client will understand the benefits of working with you. Your proposal needs to hammer those benefits home."
+                                },
+                                {
+                                    content: "To that end, make sure you include a section that highlights precisely what your prospect will get in return for working with you. If you can demonstrate that, by purchasing your service, they’ll receive benefits far in excess of the cost, you’ll put their mind at ease — and stand out from the competition."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Forgetting to follow up.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers think that sending their proposal is the end of the conversation–it couldn't be further from the truth. Once you've edited your proposal template and send it on its way, you need to follow up."
+                                },
+                                {
+                                    content: "Did your prospective client receive it? Do they have any questions? Perhaps, they've simply not had time to look at it yet and will be grateful for the reminder."
+                                },
+                                {
+                                    content: "Sending a few emails after a proposal is the best way to follow up on it, but remember that your proposal–however fantastic it is–is not their only priority. After all, your client has a business function to run. So, send an email 24hr later asking to confirm if they've received it, and if they have any questions, maybe even let them know when you're expecting their response–in a subtle way."
+                                },
+                                {
+                                    content: "By following up on it, you show your interest, and by being respectful of their time, you show them that you understand the time constraints their business has–and all of this proves to them you're someone that would be a great partner to them!"
+                                },
+                                {
+                                    content: "Note: Bonsai's proposals actually save you the headache of remembering to follow up. You can track when your proposal has been viewed and make accepting as easy as possible with package selection and electronic approval."
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'What a Good Proposal Template Includes',
+                    contentList: [
+                        {
+                            content: "Now that you know some of the benefits of using a template, and some of the most common mistakes you need to avoid, let’s take a look at the key elements of a proposal template.",
+                        },
+                        {
+                            content: "For starters, every template will require certain information that will remain the same, including:",
+                            contentUlList: [
+                                {
+                                    content: "A cover page; with your name, your freelance business name and address, and your logo or business branding",
+                                },
+                                {
+                                    content: "Short personal statement; outlining your background, experience, business and maybe some of your team members",
+                                },
+                                {
+                                    content: "Executive summary; a brief summary of what you’re about to present",
+                                },
+                                {
+                                    content: "Goals and objectives; what you’re trying to achieve with the proposal and how you plan to solve the client's challenge",
+                                },
+                                {
+                                    content: "Scope of work; the nitty-gritty details of the project or business proposal plan",
+                                },
+                                {
+                                    content: "Timeline; time is money, and clients will want to see how long your work will take",
+                                },
+                                {
+                                    content: "Previous projects; you're only as good as your past achievements, so showcase them. Add customer testimonials",
+                                },
+                                {
+                                    content: "Return on investment (ROI); what revenue goals do you believe your solution will obtain for the client",
+                                },
+                                {
+                                    content: "Payment terms; accepted forms of payment (i.e., do you accept credit cards?) and when you expect to be paid (15 days, 30 days, etc.)",
+                                },
+                                {
+                                    content: "Terms and conditions; including late fees, confidentiality, and copyright, etc",
+                                },
+                                {
+                                    content: "Final CTA; let them know how to contact you and the following steps",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Next, you need to include sections for the information that you’ll adapt as per the brief. This ensures that your format will remain consistent, even if this info changes from one pitch to the next.:",
+                            contentUlList: [
+                                {
+                                    content: "Client reference number; for your own records (include the date)",
+                                },
+                                {
+                                    content: "A cover letter; outlining your understanding of the brief and how you plan to solve the client's problem",
+                                },
+                                {
+                                    content: "Resources needed; A list of the resources, client assets and information you need to deliver your work",
+                                },
+                                {
+                                    content: "Acceptance date; a date by which the proposal must be accepted.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Note: When you’re creating your proposal using an editable template, you need to be meticulous when it comes to spelling and proofreading. If you profess to have “an eye for detail” while your proposal is riddled with errors, it (and you) won’t be taken seriously. Get someone you trust to check it over when you think it’s ready.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'When to Use a Proposal Template?',
+                    contentList: [
+                        {
+                            content: "The way in which you pitch your services is a reflection of you and your business.",
+                        },
+                        {
+                            content: "You could simply draft a few lines in an email, add an estimated cost, and hit send, but you’ll appear uninterested in the client's project.",
+                        },
+                        {
+                            content: "You could also open a blank document and try to write a full proposal from scratch, but you might miss key information, or write too much and miss the point of the brief entirely. Structure is just as important as the content.",
+                        },
+                        {
+                            content: "Now, imagine the alternative. Instead of doing too much or too little, you simply produce a polished proposal that covers all the key points and guides the prospect through your solution.",
+                        },
+                        {
+                            content: "It’s not too long. It’s not too short. It’s just right. And if you do that, you’ll come across as professional, considered, and in control. With that in mind, you can use a proposal template whenever you’re pitching for new work:",
+                            contentUlList: [
+                                {
+                                    content: "Formal response to an RFP; gather information and insert it into your template, building a professional-looking document that demonstrates your knowledge and understanding of the task at hand.",
+                                },
+                                {
+                                    content: "A less formal, cold pitch; you can use your template to once again build out a considered solution to a problem the client may not even realize they’re experiencing. Seeing it laid out in a proposal document would make it far more compelling than if it arrived in a short, easily dismissed email.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Either way, a template can bring structure to your pitching process and help you win more than you lose.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Advantages of Proposal Templates',
+                    contentList: [
+                        {
+                            content: "There are plenty of advantages in using a free proposal template and even more when using one of Bonsai’s! Take a look:",
+                            contentUlList: [
+                                {
+                                    content: "You can turnaround proposals quicker than if you were writing them from scratch, which increases your chances of winning business. You can respond to a client’s request sooner than the competition",
+                                },
+                                {
+                                    content: "Templates provide complete consistency. By using a template, you can produce several proposals in quick succession, and tailor each for a specific brief.",
+                                },
+                                {
+                                    content: "Templates can also encapsulate your brand. From the colours you use to your logo, font, and tone of voice, you can position yourself in whatever way you want to be perceived",
+                                },
+                                {
+                                    content: "They help free up your time — time that can be spent on other important freelance tasks",
+                                },
+                                {
+                                    content: "It becomes a repeatable process, and one you can tweak and improve as you go. You don’t have to completely reinvent the wheel each and every time you send out a new proposal. You’ll soon have an idea of what works and what doesn’t.",
+                                },
+                                {
+                                    content: "A quality proposal template sends a positive message about your business. It screams professionalism, integrity, and reliability",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'The Benefits of Using Bonsai’s Templates',
+                    contentList: [
+                        {
+                            content: "Writing proposals can be time-consuming: you need to add information about yourself, your previous work, your proposed business or project, payment information, and more.",
+                        },
+                        {
+                            content: "Once you have the hang of creating and writing a freelance proposal, the next step is to join the top 1% in using a dedicated online system.",
+                        },
+                        {
+                            content: "This will do much of the heavy lifting for you, including adding and removing sections with a click, calculating fees instantly, sending reminders, and tracking when the proposal is opened.",
+                        },
+                        {
+                            content: "And if you’re looking for an all-in-one freelancing tool for professional-looking proposals, look no further! Bonsai offers a 14-day free trial.",
+                        },
+                        {
+                            content: "There are several key elements to note with a Bonsai sample proposal:",
+                            contentUlList: [
+                                {
+                                    content: "You can emphasise your professionalism by adding your company branding to the document",
+                                },
+                                {
+                                    content: "Each template has a clear structure, incorporating all the important sections of a client-winning proposal",
+                                },
+                                {
+                                    content: "An easy-to-understand fee summary, with an option to choose between packages",
+                                },
+                            ]
+                        },
+                        {
+                            content: "It’s crystal clear, easy to read, and looks professional. But that’s not all. If your prospective client is sold on your solution, they can accept your proposal from within the document. No need for long email chains or time-consuming back-and-forth.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How to Create a Proposal Using Bonsai Templates',
+                    contentList: [
+                        {
+                            content: "Super simple. Bonsai makes creating, saving and sending proposal templates easy. Here's how:",
+                            contentUlList: [
+                                {
+                                    content: "Sign up to Bonsai for free",
+                                },
+                                {
+                                    content: "Choose the proposal template that reflects your industry from our gallery",
+                                },
+                                {
+                                    content: "Start editing your template",
+                                },
+                                {
+                                    content: "Download and send to your client. Job done.",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Bonsai vs Generic Proposal Templates',
+                    contentList: [
+                        {
+                            content: "Bonsai beats generic proposal templates in many ways–but we know you can’t just trust our word, we need to show you:",
+                        },
+                    ]
+                },
+            ],
+            comparisionTableData: [
+                {
+                    title: "Fast, automated workflow",
+                    content: "Create, customize and send professional-looking proposals in minutes.",
+                },
+                {
+                    title: "Flexible editing",
+                    content: "Add, move, or remove sections in seconds.",
+                },
+                {
+                    title: "Notifications",
+                    content: "Get notifications when clients view or accept your proposals.",
+                },
+                {
+                    title: "Automate your follow-up",
+                    content: "Optimize automatic reminders by choosing the right time to email each client.",
+                },
+                {
+                    title: "Let clients mix and match packages",
+                    content: "Add single or multiple package options to your proposals that your clients can choose from automatically.",
+                },
+                {
+                    title: "Streamline approvals",
+                    content: "Make accepting as easy as possible with package selection and electronic-approval.",
+                },
+            ]
         },
         {
             icon: faFileInvoiceDollar,
@@ -849,6 +1660,411 @@ const Header = () => {
                     title: 'Remodel Invoice Template',
                 },
             ],
+            tableOfContent: [
+                {
+                    mainTitle: 'What Are Invoice Templates?',
+                    contentList: [
+                        {
+                            content: 'A invoice template is the skeleton document you adapt to win business from new and existing clients. Your invoice template includes all the specific information your prospective client needs to know how you will solve their challenges, and the goals you want to accomplish with them. All you need to do is adapt your invoice template for each client.',
+                        },
+                        {
+                            content: 'With business invoices, you introduce who you are, what your business does, and what you’ve achieved. You also run through the details of what you’re planning to accomplish for your potential client. invoices can look however you need them to, they can be a fully-fledged business plan, a design invoice, or even a marketing invoice—it depends on what you do.',
+                        },
+                        {
+                            content: 'invoice templates are a great way to streamline and improve your invoice workflow. Having a invoice template on standby makes your life easier, business ops smoother, and ultimately helps you close more business.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Why Use a invoice Template?',
+                    contentList: [
+                        {
+                            content: "There are some obvious reasons why you should use a templated invoice:",
+                            contentUlList: [
+                                {
+                                    content: "Creating a reusable document saves precious time and energy",
+                                },
+                                {
+                                    content: "It allows you to be consistent with your tone and messaging",
+                                },
+                                {
+                                    content: "You can add your branding to the document, to make you look more professional than the competition",
+                                },
+                                {
+                                    content: "It provides clarity to your prospective client, laying out exactly what you can do, the duration, and how much it will cost",
+                                },
+                                {
+                                    content: "You can track and monitor the pitches you send, adjusting as you go, rather than starting from scratch each and every time",
+                                },
+                            ]
+                        },
+                        {
+                            content: "But a invoice is so much more than simply a list of your services with prices attached.",
+                        },
+                        {
+                            content: "Firstly, it’s your opportunity to lay the groundwork for a potentially fruitful working relationship. By using a invoice template, you get to establish smooth lines of communication, define expectations, and demonstrate that you understand the needs, goals, and ideas of the client.",
+                        },
+                        {
+                            content: "That last part is crucial because, if you’re responding to an RFP (“request for invoice” — sometimes called a “request for pitch”) you need to show that you’ve read and understood the initial brief. If you can’t do that, you’ve fallen at the first hurdle.",
+                        },
+                        {
+                            content: "Then there’s the aesthetics. Your invoice should be an extension of your brand, and, as Jeff Bezos said, “your brand is what other people say about you when you’re not in the room.”",
+                        },
+                        {
+                            content: "By using a invoice template, you can control how your brand is perceived every time you pitch for new work. And by positioning yourself right, you can charge higher rates and work with a better quality of client.",
+                        },
+                        {
+                            content: "Finally, your invoice can act as a framework for your contract. It’s your chance to clear up any misunderstandings, ask the right questions, and (importantly) get the answers to those questions.",
+                        },
+                        {
+                            content: "Once your prospect accepts your invoice, you can then take the milestones and costs they’ve approved, and simply sweep them into your contract. Seamless.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: '8 Common Mistakes to Avoid While Using invoice Templates',
+                    contentList: [
+                        {
+                            content: 'While it’s undoubtedly true that using a invoice template can speed things up when it comes to pitching for new work, there are still some pitfalls you need to avoid.',
+                        },
+                        {
+                            content: 'By understanding what these are, you can tweak your template to make sure you aren’t making common mistakes. That’s the downside to a template — if one error slips the net, you’ll end up repeating it every time you make a new invoice.',
+                        },
+                        {
+                            content: 'Luckily, at Bonsai, we’ve worked with over 150,000 freelancers, many of whom are firmly in the top 1% when it comes to earnings and reputation.',
+                        },
+                        {
+                            content: 'We’ve asked them to share their top mistakes, and how best to avoid them:',
+                        },
+                    ],
+                    mistakeList: [
+                        {
+                            mistakeTitle: "Placing too much focus on your experience.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers get this wrong when writing a invoice. They get so swept up in selling themselves that they forget what it is their prospect wants to know: “How can you help me?”"
+                                },
+                                {
+                                    content: "Yes, it’s important to instil confidence that you’re the right person for the job. But don’t drone on about all your accomplishments and experiences. Make it clear and concise that you know what you’re doing, then move onto the task at hand, which is, of course, selling the solution."
+                                },
+                                {
+                                    content: "In short, make sure your invoice isn’t all about you. A short blurb and a few bullet points should be enough to capture all the relevant info."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Being too salesy.",
+                            contentList: [
+                                {
+                                    content: "The flipside to mistake number one is that some freelancers tend to overcorrect. Instead of talking about themselves, they jump straight into sales mode, which can set the wrong tone from the outset."
+                                },
+                                {
+                                    content: "Most successful freelancer-client relationships come about due to the fact that they’re framed as partnerships. You’re going to work together to overcome these challenges and deliver results."
+                                },
+                                {
+                                    content: "To do this, you need to make a connection with your words. You need to treat your prospect as a human being, build trust, and get to know them better. If you fail to do this, you can come across as a sleazy salesperson trying to make a quick buck, rather than a focused freelancer who truly cares about their client’s goals."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the same cover letter over and over.",
+                            contentList: [
+                                {
+                                    content: "Another downside to using a template is the temptation to write something once and never change it. This is especially true of your cover letter. While other parts of your template can stay the same, you should spend some time tweaking (or rewriting) your cover letter to make sure it meets the client’s expectations."
+                                },
+                                {
+                                    content: "It’s your opportunity to demonstrate that you’ve read and understood the brief, setting the tone for the rest of the invoice. If it appears generic, there’s a good chance your pitch will be dismissed, no matter how good your proposed solution."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Sending long invoices.",
+                            contentList: [
+                                {
+                                    content: "By now, it’s probably apparent that the key to a successful freelance invoice is balance. You might think that pouring hours into creating the perfect invoice will enhance your chances of winning the bid, but in most cases, the opposite is true."
+                                },
+                                {
+                                    content: "If you make your invoice too long, you’ll fail to engage your prospect. Short and to the point will almost always win the day. Remember, you’ll have plenty of time to dig into the detail when you win the job. This is about making a quick and meaningful connection — not writing War and Peace."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Not sending a invoice quickly.",
+                            contentList: [
+                                {
+                                    content: "You’d think this would be a slam dunk when you’ve got a invoice template at your fingertips. And yet, some freelancers are still slow out the blocks when it comes to sending a invoice."
+                                },
+                                {
+                                    content: "When a potential client reaches out, whether it’s informally through social media or via your website, or formally with an RFP, chances are they’re excited to get going. They’ve got an idea, and they need your expert help to make it happen."
+                                },
+                                {
+                                    content: "If you’re slow in sending your invoice, you’re effectively failing to match their excitement, and that’ll show. Clients want to work with freelancers who want to work with them."
+                                },
+                                {
+                                    content: "Don’t allow the fact that you’ve got a template to lure you into a false sense of security where time is concerned! Your competition won’t hang around. Snap to it."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the wrong language around price.",
+                            contentList: [
+                                {
+                                    content: "This is something the top 1% nail time and again — value language. When you’re creating the pricing section of your freelance invoice, it’s your opportunity to frame the tricky subject of cost in a positive light. By using the word “investment”, you’re moving the focus away from “money spent” to “money invested”."
+                                },
+                                {
+                                    content: "It really is that simple. With one minor switch, you’re able to provoke a different psychological response. An “investment” suggests that they’ll see benefits or results, whereas “cost” is simply money out the door with nothing in return."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Failing to highlight ROI (return on investment).",
+                            contentList: [
+                                {
+                                    content: "Just because you’ve tweaked the language in your pricing section, don’t assume that every potential client will understand the benefits of working with you. Your invoice needs to hammer those benefits home."
+                                },
+                                {
+                                    content: "To that end, make sure you include a section that highlights precisely what your prospect will get in return for working with you. If you can demonstrate that, by purchasing your service, they’ll receive benefits far in excess of the cost, you’ll put their mind at ease — and stand out from the competition."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Forgetting to follow up.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers think that sending their invoice is the end of the conversation–it couldn't be further from the truth. Once you've edited your invoice template and send it on its way, you need to follow up."
+                                },
+                                {
+                                    content: "Did your prospective client receive it? Do they have any questions? Perhaps, they've simply not had time to look at it yet and will be grateful for the reminder."
+                                },
+                                {
+                                    content: "Sending a few emails after a invoice is the best way to follow up on it, but remember that your invoice–however fantastic it is–is not their only priority. After all, your client has a business function to run. So, send an email 24hr later asking to confirm if they've received it, and if they have any questions, maybe even let them know when you're expecting their response–in a subtle way."
+                                },
+                                {
+                                    content: "By following up on it, you show your interest, and by being respectful of their time, you show them that you understand the time constraints their business has–and all of this proves to them you're someone that would be a great partner to them!"
+                                },
+                                {
+                                    content: "Note: Bonsai's invoices actually save you the headache of remembering to follow up. You can track when your invoice has been viewed and make accepting as easy as possible with package selection and electronic approval."
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'What a Good invoice Template Includes',
+                    contentList: [
+                        {
+                            content: "Now that you know some of the benefits of using a template, and some of the most common mistakes you need to avoid, let’s take a look at the key elements of a invoice template.",
+                        },
+                        {
+                            content: "For starters, every template will require certain information that will remain the same, including:",
+                            contentUlList: [
+                                {
+                                    content: "A cover page; with your name, your freelance business name and address, and your logo or business branding",
+                                },
+                                {
+                                    content: "Short personal statement; outlining your background, experience, business and maybe some of your team members",
+                                },
+                                {
+                                    content: "Executive summary; a brief summary of what you’re about to present",
+                                },
+                                {
+                                    content: "Goals and objectives; what you’re trying to achieve with the invoice and how you plan to solve the client's challenge",
+                                },
+                                {
+                                    content: "Scope of work; the nitty-gritty details of the project or business invoice plan",
+                                },
+                                {
+                                    content: "Timeline; time is money, and clients will want to see how long your work will take",
+                                },
+                                {
+                                    content: "Previous projects; you're only as good as your past achievements, so showcase them. Add customer testimonials",
+                                },
+                                {
+                                    content: "Return on investment (ROI); what revenue goals do you believe your solution will obtain for the client",
+                                },
+                                {
+                                    content: "Payment terms; accepted forms of payment (i.e., do you accept credit cards?) and when you expect to be paid (15 days, 30 days, etc.)",
+                                },
+                                {
+                                    content: "Terms and conditions; including late fees, confidentiality, and copyright, etc",
+                                },
+                                {
+                                    content: "Final CTA; let them know how to contact you and the following steps",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Next, you need to include sections for the information that you’ll adapt as per the brief. This ensures that your format will remain consistent, even if this info changes from one pitch to the next.:",
+                            contentUlList: [
+                                {
+                                    content: "Client reference number; for your own records (include the date)",
+                                },
+                                {
+                                    content: "A cover letter; outlining your understanding of the brief and how you plan to solve the client's problem",
+                                },
+                                {
+                                    content: "Resources needed; A list of the resources, client assets and information you need to deliver your work",
+                                },
+                                {
+                                    content: "Acceptance date; a date by which the invoice must be accepted.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Note: When you’re creating your invoice using an editable template, you need to be meticulous when it comes to spelling and proofreading. If you profess to have “an eye for detail” while your invoice is riddled with errors, it (and you) won’t be taken seriously. Get someone you trust to check it over when you think it’s ready.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'When to Use a invoice Template?',
+                    contentList: [
+                        {
+                            content: "The way in which you pitch your services is a reflection of you and your business.",
+                        },
+                        {
+                            content: "You could simply draft a few lines in an email, add an estimated cost, and hit send, but you’ll appear uninterested in the client's project.",
+                        },
+                        {
+                            content: "You could also open a blank document and try to write a full invoice from scratch, but you might miss key information, or write too much and miss the point of the brief entirely. Structure is just as important as the content.",
+                        },
+                        {
+                            content: "Now, imagine the alternative. Instead of doing too much or too little, you simply produce a polished invoice that covers all the key points and guides the prospect through your solution.",
+                        },
+                        {
+                            content: "It’s not too long. It’s not too short. It’s just right. And if you do that, you’ll come across as professional, considered, and in control. With that in mind, you can use a invoice template whenever you’re pitching for new work:",
+                            contentUlList: [
+                                {
+                                    content: "Formal response to an RFP; gather information and insert it into your template, building a professional-looking document that demonstrates your knowledge and understanding of the task at hand.",
+                                },
+                                {
+                                    content: "A less formal, cold pitch; you can use your template to once again build out a considered solution to a problem the client may not even realize they’re experiencing. Seeing it laid out in a invoice document would make it far more compelling than if it arrived in a short, easily dismissed email.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Either way, a template can bring structure to your pitching process and help you win more than you lose.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Advantages of invoice Templates',
+                    contentList: [
+                        {
+                            content: "There are plenty of advantages in using a free invoice template and even more when using one of Bonsai’s! Take a look:",
+                            contentUlList: [
+                                {
+                                    content: "You can turnaround invoices quicker than if you were writing them from scratch, which increases your chances of winning business. You can respond to a client’s request sooner than the competition",
+                                },
+                                {
+                                    content: "Templates provide complete consistency. By using a template, you can produce several invoices in quick succession, and tailor each for a specific brief.",
+                                },
+                                {
+                                    content: "Templates can also encapsulate your brand. From the colours you use to your logo, font, and tone of voice, you can position yourself in whatever way you want to be perceived",
+                                },
+                                {
+                                    content: "They help free up your time — time that can be spent on other important freelance tasks",
+                                },
+                                {
+                                    content: "It becomes a repeatable process, and one you can tweak and improve as you go. You don’t have to completely reinvent the wheel each and every time you send out a new invoice. You’ll soon have an idea of what works and what doesn’t.",
+                                },
+                                {
+                                    content: "A quality invoice template sends a positive message about your business. It screams professionalism, integrity, and reliability",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'The Benefits of Using Bonsai’s Templates',
+                    contentList: [
+                        {
+                            content: "Writing invoices can be time-consuming: you need to add information about yourself, your previous work, your proposed business or project, payment information, and more.",
+                        },
+                        {
+                            content: "Once you have the hang of creating and writing a freelance invoice, the next step is to join the top 1% in using a dedicated online system.",
+                        },
+                        {
+                            content: "This will do much of the heavy lifting for you, including adding and removing sections with a click, calculating fees instantly, sending reminders, and tracking when the invoice is opened.",
+                        },
+                        {
+                            content: "And if you’re looking for an all-in-one freelancing tool for professional-looking invoices, look no further! Bonsai offers a 14-day free trial.",
+                        },
+                        {
+                            content: "There are several key elements to note with a Bonsai sample invoice:",
+                            contentUlList: [
+                                {
+                                    content: "You can emphasise your professionalism by adding your company branding to the document",
+                                },
+                                {
+                                    content: "Each template has a clear structure, incorporating all the important sections of a client-winning invoice",
+                                },
+                                {
+                                    content: "An easy-to-understand fee summary, with an option to choose between packages",
+                                },
+                            ]
+                        },
+                        {
+                            content: "It’s crystal clear, easy to read, and looks professional. But that’s not all. If your prospective client is sold on your solution, they can accept your invoice from within the document. No need for long email chains or time-consuming back-and-forth.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How to Create a invoice Using Bonsai Templates',
+                    contentList: [
+                        {
+                            content: "Super simple. Bonsai makes creating, saving and sending invoice templates easy. Here's how:",
+                            contentUlList: [
+                                {
+                                    content: "Sign up to Bonsai for free",
+                                },
+                                {
+                                    content: "Choose the invoice template that reflects your industry from our gallery",
+                                },
+                                {
+                                    content: "Start editing your template",
+                                },
+                                {
+                                    content: "Download and send to your client. Job done.",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Bonsai vs Generic invoice Templates',
+                    contentList: [
+                        {
+                            content: "Bonsai beats generic invoice templates in many ways–but we know you can’t just trust our word, we need to show you:",
+                        },
+                    ]
+                },
+            ],
+            comparisionTableData: [
+                {
+                    title: "Fast, automated workflow",
+                    content: "Create, customize and send professional-looking invoices in minutes.",
+                },
+                {
+                    title: "Flexible editing",
+                    content: "Add, move, or remove sections in seconds.",
+                },
+                {
+                    title: "Notifications",
+                    content: "Get notifications when clients view or accept your invoices.",
+                },
+                {
+                    title: "Automate your follow-up",
+                    content: "Optimize automatic reminders by choosing the right time to email each client.",
+                },
+                {
+                    title: "Let clients mix and match packages",
+                    content: "Add single or multiple package options to your invoices that your clients can choose from automatically.",
+                },
+                {
+                    title: "Streamline approvals",
+                    content: "Make accepting as easy as possible with package selection and electronic-approval.",
+                },
+            ]
         },
         {
             icon: faFileContract,
@@ -923,6 +2139,411 @@ const Header = () => {
                     title: 'Remodel Agreement Template',
                 },
             ],
+            tableOfContent: [
+                {
+                    mainTitle: 'What Are Agreement Templates?',
+                    contentList: [
+                        {
+                            content: 'A agreement template is the skeleton document you adapt to win business from new and existing clients. Your agreement template includes all the specific information your prospective client needs to know how you will solve their challenges, and the goals you want to accomplish with them. All you need to do is adapt your agreement template for each client.',
+                        },
+                        {
+                            content: 'With business agreements, you introduce who you are, what your business does, and what you’ve achieved. You also run through the details of what you’re planning to accomplish for your potential client. agreements can look however you need them to, they can be a fully-fledged business plan, a design agreement, or even a marketing agreement—it depends on what you do.',
+                        },
+                        {
+                            content: 'agreement templates are a great way to streamline and improve your agreement workflow. Having a agreement template on standby makes your life easier, business ops smoother, and ultimately helps you close more business.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Why Use a agreement Template?',
+                    contentList: [
+                        {
+                            content: "There are some obvious reasons why you should use a templated agreement:",
+                            contentUlList: [
+                                {
+                                    content: "Creating a reusable document saves precious time and energy",
+                                },
+                                {
+                                    content: "It allows you to be consistent with your tone and messaging",
+                                },
+                                {
+                                    content: "You can add your branding to the document, to make you look more professional than the competition",
+                                },
+                                {
+                                    content: "It provides clarity to your prospective client, laying out exactly what you can do, the duration, and how much it will cost",
+                                },
+                                {
+                                    content: "You can track and monitor the pitches you send, adjusting as you go, rather than starting from scratch each and every time",
+                                },
+                            ]
+                        },
+                        {
+                            content: "But a agreement is so much more than simply a list of your services with prices attached.",
+                        },
+                        {
+                            content: "Firstly, it’s your opportunity to lay the groundwork for a potentially fruitful working relationship. By using a agreement template, you get to establish smooth lines of communication, define expectations, and demonstrate that you understand the needs, goals, and ideas of the client.",
+                        },
+                        {
+                            content: "That last part is crucial because, if you’re responding to an RFP (“request for agreement” — sometimes called a “request for pitch”) you need to show that you’ve read and understood the initial brief. If you can’t do that, you’ve fallen at the first hurdle.",
+                        },
+                        {
+                            content: "Then there’s the aesthetics. Your agreement should be an extension of your brand, and, as Jeff Bezos said, “your brand is what other people say about you when you’re not in the room.”",
+                        },
+                        {
+                            content: "By using a agreement template, you can control how your brand is perceived every time you pitch for new work. And by positioning yourself right, you can charge higher rates and work with a better quality of client.",
+                        },
+                        {
+                            content: "Finally, your agreement can act as a framework for your contract. It’s your chance to clear up any misunderstandings, ask the right questions, and (importantly) get the answers to those questions.",
+                        },
+                        {
+                            content: "Once your prospect accepts your agreement, you can then take the milestones and costs they’ve approved, and simply sweep them into your contract. Seamless.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: '8 Common Mistakes to Avoid While Using agreement Templates',
+                    contentList: [
+                        {
+                            content: 'While it’s undoubtedly true that using a agreement template can speed things up when it comes to pitching for new work, there are still some pitfalls you need to avoid.',
+                        },
+                        {
+                            content: 'By understanding what these are, you can tweak your template to make sure you aren’t making common mistakes. That’s the downside to a template — if one error slips the net, you’ll end up repeating it every time you make a new agreement.',
+                        },
+                        {
+                            content: 'Luckily, at Bonsai, we’ve worked with over 150,000 freelancers, many of whom are firmly in the top 1% when it comes to earnings and reputation.',
+                        },
+                        {
+                            content: 'We’ve asked them to share their top mistakes, and how best to avoid them:',
+                        },
+                    ],
+                    mistakeList: [
+                        {
+                            mistakeTitle: "Placing too much focus on your experience.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers get this wrong when writing a agreement. They get so swept up in selling themselves that they forget what it is their prospect wants to know: “How can you help me?”"
+                                },
+                                {
+                                    content: "Yes, it’s important to instil confidence that you’re the right person for the job. But don’t drone on about all your accomplishments and experiences. Make it clear and concise that you know what you’re doing, then move onto the task at hand, which is, of course, selling the solution."
+                                },
+                                {
+                                    content: "In short, make sure your agreement isn’t all about you. A short blurb and a few bullet points should be enough to capture all the relevant info."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Being too salesy.",
+                            contentList: [
+                                {
+                                    content: "The flipside to mistake number one is that some freelancers tend to overcorrect. Instead of talking about themselves, they jump straight into sales mode, which can set the wrong tone from the outset."
+                                },
+                                {
+                                    content: "Most successful freelancer-client relationships come about due to the fact that they’re framed as partnerships. You’re going to work together to overcome these challenges and deliver results."
+                                },
+                                {
+                                    content: "To do this, you need to make a connection with your words. You need to treat your prospect as a human being, build trust, and get to know them better. If you fail to do this, you can come across as a sleazy salesperson trying to make a quick buck, rather than a focused freelancer who truly cares about their client’s goals."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the same cover letter over and over.",
+                            contentList: [
+                                {
+                                    content: "Another downside to using a template is the temptation to write something once and never change it. This is especially true of your cover letter. While other parts of your template can stay the same, you should spend some time tweaking (or rewriting) your cover letter to make sure it meets the client’s expectations."
+                                },
+                                {
+                                    content: "It’s your opportunity to demonstrate that you’ve read and understood the brief, setting the tone for the rest of the agreement. If it appears generic, there’s a good chance your pitch will be dismissed, no matter how good your proposed solution."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Sending long agreements.",
+                            contentList: [
+                                {
+                                    content: "By now, it’s probably apparent that the key to a successful freelance agreement is balance. You might think that pouring hours into creating the perfect agreement will enhance your chances of winning the bid, but in most cases, the opposite is true."
+                                },
+                                {
+                                    content: "If you make your agreement too long, you’ll fail to engage your prospect. Short and to the point will almost always win the day. Remember, you’ll have plenty of time to dig into the detail when you win the job. This is about making a quick and meaningful connection — not writing War and Peace."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Not sending a agreement quickly.",
+                            contentList: [
+                                {
+                                    content: "You’d think this would be a slam dunk when you’ve got a agreement template at your fingertips. And yet, some freelancers are still slow out the blocks when it comes to sending a agreement."
+                                },
+                                {
+                                    content: "When a potential client reaches out, whether it’s informally through social media or via your website, or formally with an RFP, chances are they’re excited to get going. They’ve got an idea, and they need your expert help to make it happen."
+                                },
+                                {
+                                    content: "If you’re slow in sending your agreement, you’re effectively failing to match their excitement, and that’ll show. Clients want to work with freelancers who want to work with them."
+                                },
+                                {
+                                    content: "Don’t allow the fact that you’ve got a template to lure you into a false sense of security where time is concerned! Your competition won’t hang around. Snap to it."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the wrong language around price.",
+                            contentList: [
+                                {
+                                    content: "This is something the top 1% nail time and again — value language. When you’re creating the pricing section of your freelance agreement, it’s your opportunity to frame the tricky subject of cost in a positive light. By using the word “investment”, you’re moving the focus away from “money spent” to “money invested”."
+                                },
+                                {
+                                    content: "It really is that simple. With one minor switch, you’re able to provoke a different psychological response. An “investment” suggests that they’ll see benefits or results, whereas “cost” is simply money out the door with nothing in return."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Failing to highlight ROI (return on investment).",
+                            contentList: [
+                                {
+                                    content: "Just because you’ve tweaked the language in your pricing section, don’t assume that every potential client will understand the benefits of working with you. Your agreement needs to hammer those benefits home."
+                                },
+                                {
+                                    content: "To that end, make sure you include a section that highlights precisely what your prospect will get in return for working with you. If you can demonstrate that, by purchasing your service, they’ll receive benefits far in excess of the cost, you’ll put their mind at ease — and stand out from the competition."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Forgetting to follow up.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers think that sending their agreement is the end of the conversation–it couldn't be further from the truth. Once you've edited your agreement template and send it on its way, you need to follow up."
+                                },
+                                {
+                                    content: "Did your prospective client receive it? Do they have any questions? Perhaps, they've simply not had time to look at it yet and will be grateful for the reminder."
+                                },
+                                {
+                                    content: "Sending a few emails after a agreement is the best way to follow up on it, but remember that your agreement–however fantastic it is–is not their only priority. After all, your client has a business function to run. So, send an email 24hr later asking to confirm if they've received it, and if they have any questions, maybe even let them know when you're expecting their response–in a subtle way."
+                                },
+                                {
+                                    content: "By following up on it, you show your interest, and by being respectful of their time, you show them that you understand the time constraints their business has–and all of this proves to them you're someone that would be a great partner to them!"
+                                },
+                                {
+                                    content: "Note: Bonsai's agreements actually save you the headache of remembering to follow up. You can track when your agreement has been viewed and make accepting as easy as possible with package selection and electronic approval."
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'What a Good agreement Template Includes',
+                    contentList: [
+                        {
+                            content: "Now that you know some of the benefits of using a template, and some of the most common mistakes you need to avoid, let’s take a look at the key elements of a agreement template.",
+                        },
+                        {
+                            content: "For starters, every template will require certain information that will remain the same, including:",
+                            contentUlList: [
+                                {
+                                    content: "A cover page; with your name, your freelance business name and address, and your logo or business branding",
+                                },
+                                {
+                                    content: "Short personal statement; outlining your background, experience, business and maybe some of your team members",
+                                },
+                                {
+                                    content: "Executive summary; a brief summary of what you’re about to present",
+                                },
+                                {
+                                    content: "Goals and objectives; what you’re trying to achieve with the agreement and how you plan to solve the client's challenge",
+                                },
+                                {
+                                    content: "Scope of work; the nitty-gritty details of the project or business agreement plan",
+                                },
+                                {
+                                    content: "Timeline; time is money, and clients will want to see how long your work will take",
+                                },
+                                {
+                                    content: "Previous projects; you're only as good as your past achievements, so showcase them. Add customer testimonials",
+                                },
+                                {
+                                    content: "Return on investment (ROI); what revenue goals do you believe your solution will obtain for the client",
+                                },
+                                {
+                                    content: "Payment terms; accepted forms of payment (i.e., do you accept credit cards?) and when you expect to be paid (15 days, 30 days, etc.)",
+                                },
+                                {
+                                    content: "Terms and conditions; including late fees, confidentiality, and copyright, etc",
+                                },
+                                {
+                                    content: "Final CTA; let them know how to contact you and the following steps",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Next, you need to include sections for the information that you’ll adapt as per the brief. This ensures that your format will remain consistent, even if this info changes from one pitch to the next.:",
+                            contentUlList: [
+                                {
+                                    content: "Client reference number; for your own records (include the date)",
+                                },
+                                {
+                                    content: "A cover letter; outlining your understanding of the brief and how you plan to solve the client's problem",
+                                },
+                                {
+                                    content: "Resources needed; A list of the resources, client assets and information you need to deliver your work",
+                                },
+                                {
+                                    content: "Acceptance date; a date by which the agreement must be accepted.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Note: When you’re creating your agreement using an editable template, you need to be meticulous when it comes to spelling and proofreading. If you profess to have “an eye for detail” while your agreement is riddled with errors, it (and you) won’t be taken seriously. Get someone you trust to check it over when you think it’s ready.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'When to Use a agreement Template?',
+                    contentList: [
+                        {
+                            content: "The way in which you pitch your services is a reflection of you and your business.",
+                        },
+                        {
+                            content: "You could simply draft a few lines in an email, add an estimated cost, and hit send, but you’ll appear uninterested in the client's project.",
+                        },
+                        {
+                            content: "You could also open a blank document and try to write a full agreement from scratch, but you might miss key information, or write too much and miss the point of the brief entirely. Structure is just as important as the content.",
+                        },
+                        {
+                            content: "Now, imagine the alternative. Instead of doing too much or too little, you simply produce a polished agreement that covers all the key points and guides the prospect through your solution.",
+                        },
+                        {
+                            content: "It’s not too long. It’s not too short. It’s just right. And if you do that, you’ll come across as professional, considered, and in control. With that in mind, you can use a agreement template whenever you’re pitching for new work:",
+                            contentUlList: [
+                                {
+                                    content: "Formal response to an RFP; gather information and insert it into your template, building a professional-looking document that demonstrates your knowledge and understanding of the task at hand.",
+                                },
+                                {
+                                    content: "A less formal, cold pitch; you can use your template to once again build out a considered solution to a problem the client may not even realize they’re experiencing. Seeing it laid out in a agreement document would make it far more compelling than if it arrived in a short, easily dismissed email.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Either way, a template can bring structure to your pitching process and help you win more than you lose.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Advantages of agreement Templates',
+                    contentList: [
+                        {
+                            content: "There are plenty of advantages in using a free agreement template and even more when using one of Bonsai’s! Take a look:",
+                            contentUlList: [
+                                {
+                                    content: "You can turnaround agreements quicker than if you were writing them from scratch, which increases your chances of winning business. You can respond to a client’s request sooner than the competition",
+                                },
+                                {
+                                    content: "Templates provide complete consistency. By using a template, you can produce several agreements in quick succession, and tailor each for a specific brief.",
+                                },
+                                {
+                                    content: "Templates can also encapsulate your brand. From the colours you use to your logo, font, and tone of voice, you can position yourself in whatever way you want to be perceived",
+                                },
+                                {
+                                    content: "They help free up your time — time that can be spent on other important freelance tasks",
+                                },
+                                {
+                                    content: "It becomes a repeatable process, and one you can tweak and improve as you go. You don’t have to completely reinvent the wheel each and every time you send out a new agreement. You’ll soon have an idea of what works and what doesn’t.",
+                                },
+                                {
+                                    content: "A quality agreement template sends a positive message about your business. It screams professionalism, integrity, and reliability",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'The Benefits of Using Bonsai’s Templates',
+                    contentList: [
+                        {
+                            content: "Writing agreements can be time-consuming: you need to add information about yourself, your previous work, your proposed business or project, payment information, and more.",
+                        },
+                        {
+                            content: "Once you have the hang of creating and writing a freelance agreement, the next step is to join the top 1% in using a dedicated online system.",
+                        },
+                        {
+                            content: "This will do much of the heavy lifting for you, including adding and removing sections with a click, calculating fees instantly, sending reminders, and tracking when the agreement is opened.",
+                        },
+                        {
+                            content: "And if you’re looking for an all-in-one freelancing tool for professional-looking agreements, look no further! Bonsai offers a 14-day free trial.",
+                        },
+                        {
+                            content: "There are several key elements to note with a Bonsai sample agreement:",
+                            contentUlList: [
+                                {
+                                    content: "You can emphasise your professionalism by adding your company branding to the document",
+                                },
+                                {
+                                    content: "Each template has a clear structure, incorporating all the important sections of a client-winning agreement",
+                                },
+                                {
+                                    content: "An easy-to-understand fee summary, with an option to choose between packages",
+                                },
+                            ]
+                        },
+                        {
+                            content: "It’s crystal clear, easy to read, and looks professional. But that’s not all. If your prospective client is sold on your solution, they can accept your agreement from within the document. No need for long email chains or time-consuming back-and-forth.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How to Create a agreement Using Bonsai Templates',
+                    contentList: [
+                        {
+                            content: "Super simple. Bonsai makes creating, saving and sending agreement templates easy. Here's how:",
+                            contentUlList: [
+                                {
+                                    content: "Sign up to Bonsai for free",
+                                },
+                                {
+                                    content: "Choose the agreement template that reflects your industry from our gallery",
+                                },
+                                {
+                                    content: "Start editing your template",
+                                },
+                                {
+                                    content: "Download and send to your client. Job done.",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Bonsai vs Generic agreement Templates',
+                    contentList: [
+                        {
+                            content: "Bonsai beats generic agreement templates in many ways–but we know you can’t just trust our word, we need to show you:",
+                        },
+                    ]
+                },
+            ],
+            comparisionTableData: [
+                {
+                    title: "Fast, automated workflow",
+                    content: "Create, customize and send professional-looking agreements in minutes.",
+                },
+                {
+                    title: "Flexible editing",
+                    content: "Add, move, or remove sections in seconds.",
+                },
+                {
+                    title: "Notifications",
+                    content: "Get notifications when clients view or accept your agreements.",
+                },
+                {
+                    title: "Automate your follow-up",
+                    content: "Optimize automatic reminders by choosing the right time to email each client.",
+                },
+                {
+                    title: "Let clients mix and match packages",
+                    content: "Add single or multiple package options to your agreements that your clients can choose from automatically.",
+                },
+                {
+                    title: "Streamline approvals",
+                    content: "Make accepting as easy as possible with package selection and electronic-approval.",
+                },
+            ]
         },
         {
             icon: faFileLines,
@@ -997,6 +2618,411 @@ const Header = () => {
                     title: 'Remodel Quote Template',
                 },
             ],
+            tableOfContent: [
+                {
+                    mainTitle: 'What Are Quote Templates?',
+                    contentList: [
+                        {
+                            content: 'A quote template is the skeleton document you adapt to win business from new and existing clients. Your quote template includes all the specific information your prospective client needs to know how you will solve their challenges, and the goals you want to accomplish with them. All you need to do is adapt your quote template for each client.',
+                        },
+                        {
+                            content: 'With business quotes, you introduce who you are, what your business does, and what you’ve achieved. You also run through the details of what you’re planning to accomplish for your potential client. quotes can look however you need them to, they can be a fully-fledged business plan, a design quote, or even a marketing quote—it depends on what you do.',
+                        },
+                        {
+                            content: 'quote templates are a great way to streamline and improve your quote workflow. Having a quote template on standby makes your life easier, business ops smoother, and ultimately helps you close more business.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Why Use a quote Template?',
+                    contentList: [
+                        {
+                            content: "There are some obvious reasons why you should use a templated quote:",
+                            contentUlList: [
+                                {
+                                    content: "Creating a reusable document saves precious time and energy",
+                                },
+                                {
+                                    content: "It allows you to be consistent with your tone and messaging",
+                                },
+                                {
+                                    content: "You can add your branding to the document, to make you look more professional than the competition",
+                                },
+                                {
+                                    content: "It provides clarity to your prospective client, laying out exactly what you can do, the duration, and how much it will cost",
+                                },
+                                {
+                                    content: "You can track and monitor the pitches you send, adjusting as you go, rather than starting from scratch each and every time",
+                                },
+                            ]
+                        },
+                        {
+                            content: "But a quote is so much more than simply a list of your services with prices attached.",
+                        },
+                        {
+                            content: "Firstly, it’s your opportunity to lay the groundwork for a potentially fruitful working relationship. By using a quote template, you get to establish smooth lines of communication, define expectations, and demonstrate that you understand the needs, goals, and ideas of the client.",
+                        },
+                        {
+                            content: "That last part is crucial because, if you’re responding to an RFP (“request for quote” — sometimes called a “request for pitch”) you need to show that you’ve read and understood the initial brief. If you can’t do that, you’ve fallen at the first hurdle.",
+                        },
+                        {
+                            content: "Then there’s the aesthetics. Your quote should be an extension of your brand, and, as Jeff Bezos said, “your brand is what other people say about you when you’re not in the room.”",
+                        },
+                        {
+                            content: "By using a quote template, you can control how your brand is perceived every time you pitch for new work. And by positioning yourself right, you can charge higher rates and work with a better quality of client.",
+                        },
+                        {
+                            content: "Finally, your quote can act as a framework for your contract. It’s your chance to clear up any misunderstandings, ask the right questions, and (importantly) get the answers to those questions.",
+                        },
+                        {
+                            content: "Once your prospect accepts your quote, you can then take the milestones and costs they’ve approved, and simply sweep them into your contract. Seamless.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: '8 Common Mistakes to Avoid While Using quote Templates',
+                    contentList: [
+                        {
+                            content: 'While it’s undoubtedly true that using a quote template can speed things up when it comes to pitching for new work, there are still some pitfalls you need to avoid.',
+                        },
+                        {
+                            content: 'By understanding what these are, you can tweak your template to make sure you aren’t making common mistakes. That’s the downside to a template — if one error slips the net, you’ll end up repeating it every time you make a new quote.',
+                        },
+                        {
+                            content: 'Luckily, at Bonsai, we’ve worked with over 150,000 freelancers, many of whom are firmly in the top 1% when it comes to earnings and reputation.',
+                        },
+                        {
+                            content: 'We’ve asked them to share their top mistakes, and how best to avoid them:',
+                        },
+                    ],
+                    mistakeList: [
+                        {
+                            mistakeTitle: "Placing too much focus on your experience.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers get this wrong when writing a quote. They get so swept up in selling themselves that they forget what it is their prospect wants to know: “How can you help me?”"
+                                },
+                                {
+                                    content: "Yes, it’s important to instil confidence that you’re the right person for the job. But don’t drone on about all your accomplishments and experiences. Make it clear and concise that you know what you’re doing, then move onto the task at hand, which is, of course, selling the solution."
+                                },
+                                {
+                                    content: "In short, make sure your quote isn’t all about you. A short blurb and a few bullet points should be enough to capture all the relevant info."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Being too salesy.",
+                            contentList: [
+                                {
+                                    content: "The flipside to mistake number one is that some freelancers tend to overcorrect. Instead of talking about themselves, they jump straight into sales mode, which can set the wrong tone from the outset."
+                                },
+                                {
+                                    content: "Most successful freelancer-client relationships come about due to the fact that they’re framed as partnerships. You’re going to work together to overcome these challenges and deliver results."
+                                },
+                                {
+                                    content: "To do this, you need to make a connection with your words. You need to treat your prospect as a human being, build trust, and get to know them better. If you fail to do this, you can come across as a sleazy salesperson trying to make a quick buck, rather than a focused freelancer who truly cares about their client’s goals."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the same cover letter over and over.",
+                            contentList: [
+                                {
+                                    content: "Another downside to using a template is the temptation to write something once and never change it. This is especially true of your cover letter. While other parts of your template can stay the same, you should spend some time tweaking (or rewriting) your cover letter to make sure it meets the client’s expectations."
+                                },
+                                {
+                                    content: "It’s your opportunity to demonstrate that you’ve read and understood the brief, setting the tone for the rest of the quote. If it appears generic, there’s a good chance your pitch will be dismissed, no matter how good your proposed solution."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Sending long quotes.",
+                            contentList: [
+                                {
+                                    content: "By now, it’s probably apparent that the key to a successful freelance quote is balance. You might think that pouring hours into creating the perfect quote will enhance your chances of winning the bid, but in most cases, the opposite is true."
+                                },
+                                {
+                                    content: "If you make your quote too long, you’ll fail to engage your prospect. Short and to the point will almost always win the day. Remember, you’ll have plenty of time to dig into the detail when you win the job. This is about making a quick and meaningful connection — not writing War and Peace."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Not sending a quote quickly.",
+                            contentList: [
+                                {
+                                    content: "You’d think this would be a slam dunk when you’ve got a quote template at your fingertips. And yet, some freelancers are still slow out the blocks when it comes to sending a quote."
+                                },
+                                {
+                                    content: "When a potential client reaches out, whether it’s informally through social media or via your website, or formally with an RFP, chances are they’re excited to get going. They’ve got an idea, and they need your expert help to make it happen."
+                                },
+                                {
+                                    content: "If you’re slow in sending your quote, you’re effectively failing to match their excitement, and that’ll show. Clients want to work with freelancers who want to work with them."
+                                },
+                                {
+                                    content: "Don’t allow the fact that you’ve got a template to lure you into a false sense of security where time is concerned! Your competition won’t hang around. Snap to it."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the wrong language around price.",
+                            contentList: [
+                                {
+                                    content: "This is something the top 1% nail time and again — value language. When you’re creating the pricing section of your freelance quote, it’s your opportunity to frame the tricky subject of cost in a positive light. By using the word “investment”, you’re moving the focus away from “money spent” to “money invested”."
+                                },
+                                {
+                                    content: "It really is that simple. With one minor switch, you’re able to provoke a different psychological response. An “investment” suggests that they’ll see benefits or results, whereas “cost” is simply money out the door with nothing in return."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Failing to highlight ROI (return on investment).",
+                            contentList: [
+                                {
+                                    content: "Just because you’ve tweaked the language in your pricing section, don’t assume that every potential client will understand the benefits of working with you. Your quote needs to hammer those benefits home."
+                                },
+                                {
+                                    content: "To that end, make sure you include a section that highlights precisely what your prospect will get in return for working with you. If you can demonstrate that, by purchasing your service, they’ll receive benefits far in excess of the cost, you’ll put their mind at ease — and stand out from the competition."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Forgetting to follow up.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers think that sending their quote is the end of the conversation–it couldn't be further from the truth. Once you've edited your quote template and send it on its way, you need to follow up."
+                                },
+                                {
+                                    content: "Did your prospective client receive it? Do they have any questions? Perhaps, they've simply not had time to look at it yet and will be grateful for the reminder."
+                                },
+                                {
+                                    content: "Sending a few emails after a quote is the best way to follow up on it, but remember that your quote–however fantastic it is–is not their only priority. After all, your client has a business function to run. So, send an email 24hr later asking to confirm if they've received it, and if they have any questions, maybe even let them know when you're expecting their response–in a subtle way."
+                                },
+                                {
+                                    content: "By following up on it, you show your interest, and by being respectful of their time, you show them that you understand the time constraints their business has–and all of this proves to them you're someone that would be a great partner to them!"
+                                },
+                                {
+                                    content: "Note: Bonsai's quotes actually save you the headache of remembering to follow up. You can track when your quote has been viewed and make accepting as easy as possible with package selection and electronic approval."
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'What a Good quote Template Includes',
+                    contentList: [
+                        {
+                            content: "Now that you know some of the benefits of using a template, and some of the most common mistakes you need to avoid, let’s take a look at the key elements of a quote template.",
+                        },
+                        {
+                            content: "For starters, every template will require certain information that will remain the same, including:",
+                            contentUlList: [
+                                {
+                                    content: "A cover page; with your name, your freelance business name and address, and your logo or business branding",
+                                },
+                                {
+                                    content: "Short personal statement; outlining your background, experience, business and maybe some of your team members",
+                                },
+                                {
+                                    content: "Executive summary; a brief summary of what you’re about to present",
+                                },
+                                {
+                                    content: "Goals and objectives; what you’re trying to achieve with the quote and how you plan to solve the client's challenge",
+                                },
+                                {
+                                    content: "Scope of work; the nitty-gritty details of the project or business quote plan",
+                                },
+                                {
+                                    content: "Timeline; time is money, and clients will want to see how long your work will take",
+                                },
+                                {
+                                    content: "Previous projects; you're only as good as your past achievements, so showcase them. Add customer testimonials",
+                                },
+                                {
+                                    content: "Return on investment (ROI); what revenue goals do you believe your solution will obtain for the client",
+                                },
+                                {
+                                    content: "Payment terms; accepted forms of payment (i.e., do you accept credit cards?) and when you expect to be paid (15 days, 30 days, etc.)",
+                                },
+                                {
+                                    content: "Terms and conditions; including late fees, confidentiality, and copyright, etc",
+                                },
+                                {
+                                    content: "Final CTA; let them know how to contact you and the following steps",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Next, you need to include sections for the information that you’ll adapt as per the brief. This ensures that your format will remain consistent, even if this info changes from one pitch to the next.:",
+                            contentUlList: [
+                                {
+                                    content: "Client reference number; for your own records (include the date)",
+                                },
+                                {
+                                    content: "A cover letter; outlining your understanding of the brief and how you plan to solve the client's problem",
+                                },
+                                {
+                                    content: "Resources needed; A list of the resources, client assets and information you need to deliver your work",
+                                },
+                                {
+                                    content: "Acceptance date; a date by which the quote must be accepted.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Note: When you’re creating your quote using an editable template, you need to be meticulous when it comes to spelling and proofreading. If you profess to have “an eye for detail” while your quote is riddled with errors, it (and you) won’t be taken seriously. Get someone you trust to check it over when you think it’s ready.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'When to Use a quote Template?',
+                    contentList: [
+                        {
+                            content: "The way in which you pitch your services is a reflection of you and your business.",
+                        },
+                        {
+                            content: "You could simply draft a few lines in an email, add an estimated cost, and hit send, but you’ll appear uninterested in the client's project.",
+                        },
+                        {
+                            content: "You could also open a blank document and try to write a full quote from scratch, but you might miss key information, or write too much and miss the point of the brief entirely. Structure is just as important as the content.",
+                        },
+                        {
+                            content: "Now, imagine the alternative. Instead of doing too much or too little, you simply produce a polished quote that covers all the key points and guides the prospect through your solution.",
+                        },
+                        {
+                            content: "It’s not too long. It’s not too short. It’s just right. And if you do that, you’ll come across as professional, considered, and in control. With that in mind, you can use a quote template whenever you’re pitching for new work:",
+                            contentUlList: [
+                                {
+                                    content: "Formal response to an RFP; gather information and insert it into your template, building a professional-looking document that demonstrates your knowledge and understanding of the task at hand.",
+                                },
+                                {
+                                    content: "A less formal, cold pitch; you can use your template to once again build out a considered solution to a problem the client may not even realize they’re experiencing. Seeing it laid out in a quote document would make it far more compelling than if it arrived in a short, easily dismissed email.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Either way, a template can bring structure to your pitching process and help you win more than you lose.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Advantages of quote Templates',
+                    contentList: [
+                        {
+                            content: "There are plenty of advantages in using a free quote template and even more when using one of Bonsai’s! Take a look:",
+                            contentUlList: [
+                                {
+                                    content: "You can turnaround quotes quicker than if you were writing them from scratch, which increases your chances of winning business. You can respond to a client’s request sooner than the competition",
+                                },
+                                {
+                                    content: "Templates provide complete consistency. By using a template, you can produce several quotes in quick succession, and tailor each for a specific brief.",
+                                },
+                                {
+                                    content: "Templates can also encapsulate your brand. From the colours you use to your logo, font, and tone of voice, you can position yourself in whatever way you want to be perceived",
+                                },
+                                {
+                                    content: "They help free up your time — time that can be spent on other important freelance tasks",
+                                },
+                                {
+                                    content: "It becomes a repeatable process, and one you can tweak and improve as you go. You don’t have to completely reinvent the wheel each and every time you send out a new quote. You’ll soon have an idea of what works and what doesn’t.",
+                                },
+                                {
+                                    content: "A quality quote template sends a positive message about your business. It screams professionalism, integrity, and reliability",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'The Benefits of Using Bonsai’s Templates',
+                    contentList: [
+                        {
+                            content: "Writing quotes can be time-consuming: you need to add information about yourself, your previous work, your proposed business or project, payment information, and more.",
+                        },
+                        {
+                            content: "Once you have the hang of creating and writing a freelance quote, the next step is to join the top 1% in using a dedicated online system.",
+                        },
+                        {
+                            content: "This will do much of the heavy lifting for you, including adding and removing sections with a click, calculating fees instantly, sending reminders, and tracking when the quote is opened.",
+                        },
+                        {
+                            content: "And if you’re looking for an all-in-one freelancing tool for professional-looking quotes, look no further! Bonsai offers a 14-day free trial.",
+                        },
+                        {
+                            content: "There are several key elements to note with a Bonsai sample quote:",
+                            contentUlList: [
+                                {
+                                    content: "You can emphasise your professionalism by adding your company branding to the document",
+                                },
+                                {
+                                    content: "Each template has a clear structure, incorporating all the important sections of a client-winning quote",
+                                },
+                                {
+                                    content: "An easy-to-understand fee summary, with an option to choose between packages",
+                                },
+                            ]
+                        },
+                        {
+                            content: "It’s crystal clear, easy to read, and looks professional. But that’s not all. If your prospective client is sold on your solution, they can accept your quote from within the document. No need for long email chains or time-consuming back-and-forth.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How to Create a quote Using Bonsai Templates',
+                    contentList: [
+                        {
+                            content: "Super simple. Bonsai makes creating, saving and sending quote templates easy. Here's how:",
+                            contentUlList: [
+                                {
+                                    content: "Sign up to Bonsai for free",
+                                },
+                                {
+                                    content: "Choose the quote template that reflects your industry from our gallery",
+                                },
+                                {
+                                    content: "Start editing your template",
+                                },
+                                {
+                                    content: "Download and send to your client. Job done.",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Bonsai vs Generic quote Templates',
+                    contentList: [
+                        {
+                            content: "Bonsai beats generic quote templates in many ways–but we know you can’t just trust our word, we need to show you:",
+                        },
+                    ]
+                },
+            ],
+            comparisionTableData: [
+                {
+                    title: "Fast, automated workflow",
+                    content: "Create, customize and send professional-looking quotes in minutes.",
+                },
+                {
+                    title: "Flexible editing",
+                    content: "Add, move, or remove sections in seconds.",
+                },
+                {
+                    title: "Notifications",
+                    content: "Get notifications when clients view or accept your quotes.",
+                },
+                {
+                    title: "Automate your follow-up",
+                    content: "Optimize automatic reminders by choosing the right time to email each client.",
+                },
+                {
+                    title: "Let clients mix and match packages",
+                    content: "Add single or multiple package options to your quotes that your clients can choose from automatically.",
+                },
+                {
+                    title: "Streamline approvals",
+                    content: "Make accepting as easy as possible with package selection and electronic-approval.",
+                },
+            ]
         },
         {
             icon: faClock,
@@ -1071,10 +3097,411 @@ const Header = () => {
                     title: 'Remodel SOW Template',
                 },
             ],
-        },
-        {
-            icon: faFileLines,
-            title: 'Brief Template'
+            tableOfContent: [
+                {
+                    mainTitle: 'What Are SOW Templates?',
+                    contentList: [
+                        {
+                            content: 'A SOW template is the skeleton document you adapt to win business from new and existing clients. Your SOW template includes all the specific information your prospective client needs to know how you will solve their challenges, and the goals you want to accomplish with them. All you need to do is adapt your SOW template for each client.',
+                        },
+                        {
+                            content: 'With business SOWs, you introduce who you are, what your business does, and what you’ve achieved. You also run through the details of what you’re planning to accomplish for your potential client. SOWs can look however you need them to, they can be a fully-fledged business plan, a design SOW, or even a marketing SOW—it depends on what you do.',
+                        },
+                        {
+                            content: 'SOW templates are a great way to streamline and improve your SOW workflow. Having a SOW template on standby makes your life easier, business ops smoother, and ultimately helps you close more business.',
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Why Use a SOW Template?',
+                    contentList: [
+                        {
+                            content: "There are some obvious reasons why you should use a templated SOW:",
+                            contentUlList: [
+                                {
+                                    content: "Creating a reusable document saves precious time and energy",
+                                },
+                                {
+                                    content: "It allows you to be consistent with your tone and messaging",
+                                },
+                                {
+                                    content: "You can add your branding to the document, to make you look more professional than the competition",
+                                },
+                                {
+                                    content: "It provides clarity to your prospective client, laying out exactly what you can do, the duration, and how much it will cost",
+                                },
+                                {
+                                    content: "You can track and monitor the pitches you send, adjusting as you go, rather than starting from scratch each and every time",
+                                },
+                            ]
+                        },
+                        {
+                            content: "But a SOW is so much more than simply a list of your services with prices attached.",
+                        },
+                        {
+                            content: "Firstly, it’s your opportunity to lay the groundwork for a potentially fruitful working relationship. By using a SOW template, you get to establish smooth lines of communication, define expectations, and demonstrate that you understand the needs, goals, and ideas of the client.",
+                        },
+                        {
+                            content: "That last part is crucial because, if you’re responding to an RFP (“request for SOW” — sometimes called a “request for pitch”) you need to show that you’ve read and understood the initial brief. If you can’t do that, you’ve fallen at the first hurdle.",
+                        },
+                        {
+                            content: "Then there’s the aesthetics. Your SOW should be an extension of your brand, and, as Jeff Bezos said, “your brand is what other people say about you when you’re not in the room.”",
+                        },
+                        {
+                            content: "By using a SOW template, you can control how your brand is perceived every time you pitch for new work. And by positioning yourself right, you can charge higher rates and work with a better quality of client.",
+                        },
+                        {
+                            content: "Finally, your SOW can act as a framework for your contract. It’s your chance to clear up any misunderstandings, ask the right questions, and (importantly) get the answers to those questions.",
+                        },
+                        {
+                            content: "Once your prospect accepts your SOW, you can then take the milestones and costs they’ve approved, and simply sweep them into your contract. Seamless.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: '8 Common Mistakes to Avoid While Using SOW Templates',
+                    contentList: [
+                        {
+                            content: 'While it’s undoubtedly true that using a SOW template can speed things up when it comes to pitching for new work, there are still some pitfalls you need to avoid.',
+                        },
+                        {
+                            content: 'By understanding what these are, you can tweak your template to make sure you aren’t making common mistakes. That’s the downside to a template — if one error slips the net, you’ll end up repeating it every time you make a new SOW.',
+                        },
+                        {
+                            content: 'Luckily, at Bonsai, we’ve worked with over 150,000 freelancers, many of whom are firmly in the top 1% when it comes to earnings and reputation.',
+                        },
+                        {
+                            content: 'We’ve asked them to share their top mistakes, and how best to avoid them:',
+                        },
+                    ],
+                    mistakeList: [
+                        {
+                            mistakeTitle: "Placing too much focus on your experience.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers get this wrong when writing a SOW. They get so swept up in selling themselves that they forget what it is their prospect wants to know: “How can you help me?”"
+                                },
+                                {
+                                    content: "Yes, it’s important to instil confidence that you’re the right person for the job. But don’t drone on about all your accomplishments and experiences. Make it clear and concise that you know what you’re doing, then move onto the task at hand, which is, of course, selling the solution."
+                                },
+                                {
+                                    content: "In short, make sure your SOW isn’t all about you. A short blurb and a few bullet points should be enough to capture all the relevant info."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Being too salesy.",
+                            contentList: [
+                                {
+                                    content: "The flipside to mistake number one is that some freelancers tend to overcorrect. Instead of talking about themselves, they jump straight into sales mode, which can set the wrong tone from the outset."
+                                },
+                                {
+                                    content: "Most successful freelancer-client relationships come about due to the fact that they’re framed as partnerships. You’re going to work together to overcome these challenges and deliver results."
+                                },
+                                {
+                                    content: "To do this, you need to make a connection with your words. You need to treat your prospect as a human being, build trust, and get to know them better. If you fail to do this, you can come across as a sleazy salesperson trying to make a quick buck, rather than a focused freelancer who truly cares about their client’s goals."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the same cover letter over and over.",
+                            contentList: [
+                                {
+                                    content: "Another downside to using a template is the temptation to write something once and never change it. This is especially true of your cover letter. While other parts of your template can stay the same, you should spend some time tweaking (or rewriting) your cover letter to make sure it meets the client’s expectations."
+                                },
+                                {
+                                    content: "It’s your opportunity to demonstrate that you’ve read and understood the brief, setting the tone for the rest of the SOW. If it appears generic, there’s a good chance your pitch will be dismissed, no matter how good your proposed solution."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Sending long SOWs.",
+                            contentList: [
+                                {
+                                    content: "By now, it’s probably apparent that the key to a successful freelance SOW is balance. You might think that pouring hours into creating the perfect SOW will enhance your chances of winning the bid, but in most cases, the opposite is true."
+                                },
+                                {
+                                    content: "If you make your SOW too long, you’ll fail to engage your prospect. Short and to the point will almost always win the day. Remember, you’ll have plenty of time to dig into the detail when you win the job. This is about making a quick and meaningful connection — not writing War and Peace."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Not sending a SOW quickly.",
+                            contentList: [
+                                {
+                                    content: "You’d think this would be a slam dunk when you’ve got a SOW template at your fingertips. And yet, some freelancers are still slow out the blocks when it comes to sending a SOW."
+                                },
+                                {
+                                    content: "When a potential client reaches out, whether it’s informally through social media or via your website, or formally with an RFP, chances are they’re excited to get going. They’ve got an idea, and they need your expert help to make it happen."
+                                },
+                                {
+                                    content: "If you’re slow in sending your SOW, you’re effectively failing to match their excitement, and that’ll show. Clients want to work with freelancers who want to work with them."
+                                },
+                                {
+                                    content: "Don’t allow the fact that you’ve got a template to lure you into a false sense of security where time is concerned! Your competition won’t hang around. Snap to it."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Using the wrong language around price.",
+                            contentList: [
+                                {
+                                    content: "This is something the top 1% nail time and again — value language. When you’re creating the pricing section of your freelance SOW, it’s your opportunity to frame the tricky subject of cost in a positive light. By using the word “investment”, you’re moving the focus away from “money spent” to “money invested”."
+                                },
+                                {
+                                    content: "It really is that simple. With one minor switch, you’re able to provoke a different psychological response. An “investment” suggests that they’ll see benefits or results, whereas “cost” is simply money out the door with nothing in return."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Failing to highlight ROI (return on investment).",
+                            contentList: [
+                                {
+                                    content: "Just because you’ve tweaked the language in your pricing section, don’t assume that every potential client will understand the benefits of working with you. Your SOW needs to hammer those benefits home."
+                                },
+                                {
+                                    content: "To that end, make sure you include a section that highlights precisely what your prospect will get in return for working with you. If you can demonstrate that, by purchasing your service, they’ll receive benefits far in excess of the cost, you’ll put their mind at ease — and stand out from the competition."
+                                },
+                            ]
+                        },
+                        {
+                            mistakeTitle: "Forgetting to follow up.",
+                            contentList: [
+                                {
+                                    content: "Many freelancers think that sending their SOW is the end of the conversation–it couldn't be further from the truth. Once you've edited your SOW template and send it on its way, you need to follow up."
+                                },
+                                {
+                                    content: "Did your prospective client receive it? Do they have any questions? Perhaps, they've simply not had time to look at it yet and will be grateful for the reminder."
+                                },
+                                {
+                                    content: "Sending a few emails after a SOW is the best way to follow up on it, but remember that your SOW–however fantastic it is–is not their only priority. After all, your client has a business function to run. So, send an email 24hr later asking to confirm if they've received it, and if they have any questions, maybe even let them know when you're expecting their response–in a subtle way."
+                                },
+                                {
+                                    content: "By following up on it, you show your interest, and by being respectful of their time, you show them that you understand the time constraints their business has–and all of this proves to them you're someone that would be a great partner to them!"
+                                },
+                                {
+                                    content: "Note: Bonsai's SOWs actually save you the headache of remembering to follow up. You can track when your SOW has been viewed and make accepting as easy as possible with package selection and electronic approval."
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'What a Good SOW Template Includes',
+                    contentList: [
+                        {
+                            content: "Now that you know some of the benefits of using a template, and some of the most common mistakes you need to avoid, let’s take a look at the key elements of a SOW template.",
+                        },
+                        {
+                            content: "For starters, every template will require certain information that will remain the same, including:",
+                            contentUlList: [
+                                {
+                                    content: "A cover page; with your name, your freelance business name and address, and your logo or business branding",
+                                },
+                                {
+                                    content: "Short personal statement; outlining your background, experience, business and maybe some of your team members",
+                                },
+                                {
+                                    content: "Executive summary; a brief summary of what you’re about to present",
+                                },
+                                {
+                                    content: "Goals and objectives; what you’re trying to achieve with the SOW and how you plan to solve the client's challenge",
+                                },
+                                {
+                                    content: "Scope of work; the nitty-gritty details of the project or business SOW plan",
+                                },
+                                {
+                                    content: "Timeline; time is money, and clients will want to see how long your work will take",
+                                },
+                                {
+                                    content: "Previous projects; you're only as good as your past achievements, so showcase them. Add customer testimonials",
+                                },
+                                {
+                                    content: "Return on investment (ROI); what revenue goals do you believe your solution will obtain for the client",
+                                },
+                                {
+                                    content: "Payment terms; accepted forms of payment (i.e., do you accept credit cards?) and when you expect to be paid (15 days, 30 days, etc.)",
+                                },
+                                {
+                                    content: "Terms and conditions; including late fees, confidentiality, and copyright, etc",
+                                },
+                                {
+                                    content: "Final CTA; let them know how to contact you and the following steps",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Next, you need to include sections for the information that you’ll adapt as per the brief. This ensures that your format will remain consistent, even if this info changes from one pitch to the next.:",
+                            contentUlList: [
+                                {
+                                    content: "Client reference number; for your own records (include the date)",
+                                },
+                                {
+                                    content: "A cover letter; outlining your understanding of the brief and how you plan to solve the client's problem",
+                                },
+                                {
+                                    content: "Resources needed; A list of the resources, client assets and information you need to deliver your work",
+                                },
+                                {
+                                    content: "Acceptance date; a date by which the SOW must be accepted.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Note: When you’re creating your SOW using an editable template, you need to be meticulous when it comes to spelling and proofreading. If you profess to have “an eye for detail” while your SOW is riddled with errors, it (and you) won’t be taken seriously. Get someone you trust to check it over when you think it’s ready.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'When to Use a SOW Template?',
+                    contentList: [
+                        {
+                            content: "The way in which you pitch your services is a reflection of you and your business.",
+                        },
+                        {
+                            content: "You could simply draft a few lines in an email, add an estimated cost, and hit send, but you’ll appear uninterested in the client's project.",
+                        },
+                        {
+                            content: "You could also open a blank document and try to write a full SOW from scratch, but you might miss key information, or write too much and miss the point of the brief entirely. Structure is just as important as the content.",
+                        },
+                        {
+                            content: "Now, imagine the alternative. Instead of doing too much or too little, you simply produce a polished SOW that covers all the key points and guides the prospect through your solution.",
+                        },
+                        {
+                            content: "It’s not too long. It’s not too short. It’s just right. And if you do that, you’ll come across as professional, considered, and in control. With that in mind, you can use a SOW template whenever you’re pitching for new work:",
+                            contentUlList: [
+                                {
+                                    content: "Formal response to an RFP; gather information and insert it into your template, building a professional-looking document that demonstrates your knowledge and understanding of the task at hand.",
+                                },
+                                {
+                                    content: "A less formal, cold pitch; you can use your template to once again build out a considered solution to a problem the client may not even realize they’re experiencing. Seeing it laid out in a SOW document would make it far more compelling than if it arrived in a short, easily dismissed email.",
+                                },
+                            ]
+                        },
+                        {
+                            content: "Either way, a template can bring structure to your pitching process and help you win more than you lose.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Advantages of SOW Templates',
+                    contentList: [
+                        {
+                            content: "There are plenty of advantages in using a free SOW template and even more when using one of Bonsai’s! Take a look:",
+                            contentUlList: [
+                                {
+                                    content: "You can turnaround SOWs quicker than if you were writing them from scratch, which increases your chances of winning business. You can respond to a client’s request sooner than the competition",
+                                },
+                                {
+                                    content: "Templates provide complete consistency. By using a template, you can produce several SOWs in quick succession, and tailor each for a specific brief.",
+                                },
+                                {
+                                    content: "Templates can also encapsulate your brand. From the colours you use to your logo, font, and tone of voice, you can position yourself in whatever way you want to be perceived",
+                                },
+                                {
+                                    content: "They help free up your time — time that can be spent on other important freelance tasks",
+                                },
+                                {
+                                    content: "It becomes a repeatable process, and one you can tweak and improve as you go. You don’t have to completely reinvent the wheel each and every time you send out a new SOW. You’ll soon have an idea of what works and what doesn’t.",
+                                },
+                                {
+                                    content: "A quality SOW template sends a positive message about your business. It screams professionalism, integrity, and reliability",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'The Benefits of Using Bonsai’s Templates',
+                    contentList: [
+                        {
+                            content: "Writing SOWs can be time-consuming: you need to add information about yourself, your previous work, your proposed business or project, payment information, and more.",
+                        },
+                        {
+                            content: "Once you have the hang of creating and writing a freelance SOW, the next step is to join the top 1% in using a dedicated online system.",
+                        },
+                        {
+                            content: "This will do much of the heavy lifting for you, including adding and removing sections with a click, calculating fees instantly, sending reminders, and tracking when the SOW is opened.",
+                        },
+                        {
+                            content: "And if you’re looking for an all-in-one freelancing tool for professional-looking SOWs, look no further! Bonsai offers a 14-day free trial.",
+                        },
+                        {
+                            content: "There are several key elements to note with a Bonsai sample SOW:",
+                            contentUlList: [
+                                {
+                                    content: "You can emphasise your professionalism by adding your company branding to the document",
+                                },
+                                {
+                                    content: "Each template has a clear structure, incorporating all the important sections of a client-winning SOW",
+                                },
+                                {
+                                    content: "An easy-to-understand fee summary, with an option to choose between packages",
+                                },
+                            ]
+                        },
+                        {
+                            content: "It’s crystal clear, easy to read, and looks professional. But that’s not all. If your prospective client is sold on your solution, they can accept your SOW from within the document. No need for long email chains or time-consuming back-and-forth.",
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'How to Create a SOW Using Bonsai Templates',
+                    contentList: [
+                        {
+                            content: "Super simple. Bonsai makes creating, saving and sending SOW templates easy. Here's how:",
+                            contentUlList: [
+                                {
+                                    content: "Sign up to Bonsai for free",
+                                },
+                                {
+                                    content: "Choose the SOW template that reflects your industry from our gallery",
+                                },
+                                {
+                                    content: "Start editing your template",
+                                },
+                                {
+                                    content: "Download and send to your client. Job done.",
+                                },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    mainTitle: 'Bonsai vs Generic SOW Templates',
+                    contentList: [
+                        {
+                            content: "Bonsai beats generic SOW templates in many ways–but we know you can’t just trust our word, we need to show you:",
+                        },
+                    ]
+                },
+            ],
+            comparisionTableData: [
+                {
+                    title: "Fast, automated workflow",
+                    content: "Create, customize and send professional-looking SOWs in minutes.",
+                },
+                {
+                    title: "Flexible editing",
+                    content: "Add, move, or remove sections in seconds.",
+                },
+                {
+                    title: "Notifications",
+                    content: "Get notifications when clients view or accept your SOWs.",
+                },
+                {
+                    title: "Automate your follow-up",
+                    content: "Optimize automatic reminders by choosing the right time to email each client.",
+                },
+                {
+                    title: "Let clients mix and match packages",
+                    content: "Add single or multiple package options to your SOWs that your clients can choose from automatically.",
+                },
+                {
+                    title: "Streamline approvals",
+                    content: "Make accepting as easy as possible with package selection and electronic-approval.",
+                },
+            ]
         },
     ]
 
@@ -1169,7 +3596,7 @@ const Header = () => {
                                                 pathname: `/templates/${data.slugs}`,
                                             }}
                                             state={{ data }}  // Pass the data object as state
-                                            onClick={()=>setTemplateDropDown(false)}
+                                            onClick={() => setTemplateDropDown(false)}
                                         >
                                             <div className='template-dropdown-content' key={index}>
                                                 <p><FontAwesomeIcon icon={data?.icon} />&nbsp;&nbsp;{data?.title}</p>

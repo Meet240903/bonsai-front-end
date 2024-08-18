@@ -1,0 +1,143 @@
+.table-content-link {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.table-content-link p {
+    color: #009977;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.template-content-li li {
+    list-style-position: inside;
+    padding-left: 20px;
+    text-indent: -20px;
+    line-height: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.mistake-left-class {
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.mistak-span {
+    color: #009977;
+    font-weight: 500;
+}
+
+.mistake-inner-divs {
+    background-color: #fff;
+    padding: 20px 40px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.mistake-inner-divs p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* Adjustments for tablet screens */
+@media (max-width: 768px) {
+    .table-content-link {
+        padding: 15px;
+        position: static;
+        top: 0;
+    }
+
+    .table-content-link p {
+        font-size: 14px;
+    }
+
+    .mistake-left-class {
+        position: static;
+    }
+
+    .mistake-inner-divs {
+        padding: 15px 30px;
+    }
+
+    .template-content-li li {
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .content-main-title{
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 576px) {
+    .table-content-link {
+        padding: 10px;
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+
+    .table-content-link p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .col-md-3 {
+        margin-bottom: 20px;
+    }
+
+    .col-md-9 {
+        padding: 0 15px;
+    }
+
+    .mistake-left-class {
+        position: static;
+        width: 100%;
+    }
+
+    .mistake-inner-divs {
+        padding: 10px 20px;
+        margin-top: 8px;
+    }
+
+    .template-content-li li {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .template-content-li {
+        padding-left: 10px;
+    }
+
+    p {
+        line-height: 1.5rem;
+        font-size: 14px;
+    }
+
+    h2, h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+    .content-main-title{
+        text-align: left;
+        font-size: 18px;
+    }
+}

@@ -1,29 +1,102 @@
-.template-top-images{
+.template-top-images {
     height: 300px;
     width: 300px;
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
 }
 
-.template-top-content{
+.template-top-content {
     text-align: center;
 }
 
-.template-top-content p{
+.template-top-content p {
     font-size: 18px;
     line-height: 2rem;
 }
 
-.template-top-btn{
+.template-top-btn {
     border: none;
     border-radius: 5px;
     background-color: #009977;
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px; /* Adjusted for better touch targets */
+    margin: 10px 0; /* Added margin for spacing */
 }
 
-.arrow-btn{
+.arrow-btn {
     padding: 10px;
     border-radius: 50%;
     border: 1px solid #009977;
     color: #009977;
     background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .template-top-images {
+        height: 250px;
+        width: 250px;
+    }
+
+    .template-top-content p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .template-top-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .template-top-images {
+        height: 200px;
+        width: 200px;
+    }
+
+    .template-top-content h1 {
+        font-size: 28px;
+    }
+
+    .template-top-content p {
+        font-size: 16px;
+        line-height: 1.6rem;
+    }
+
+    .template-top-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .arrow-btn {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .template-top-images {
+        height: 150px;
+        width: 150px;
+    }
+
+    .template-top-content h1 {
+        font-size: 24px;
+    }
+
+    .template-top-content p {
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+
+    .template-top-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .arrow-btn {
+        padding: 6px;
+    }
+
+    .template-top-content {
+        margin-top: 20px;
+    }
 }

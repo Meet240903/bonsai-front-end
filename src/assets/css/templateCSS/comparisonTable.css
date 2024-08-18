@@ -1,0 +1,100 @@
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 5rem;
+}
+
+.comparison-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    width: 40%; /* Adjust the width as needed */
+    text-align: left;
+}
+.comparison-table th:first-child{
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.table-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.table-check-class{
+    color: #009977;
+    font-size: 20px;
+}
+.table-close-class{
+    color: grey;
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .comparison-table th, .comparison-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+        width: 30%; /* Adjust the width for smaller screens */
+    }
+
+    .table-logo {
+        width: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-responsive {
+        margin-top: 2rem;
+    }
+    .comparison-table th, .comparison-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+        width: 20%; /* Further adjust the width for very small screens */
+    }
+
+    .table-logo {
+        width: 30px;
+        height: 50px;
+    }
+
+    .comparison-table {
+        font-size: 14px;
+    }
+    .table-check-class{
+        font-size: 14px;
+    }
+    .table-close-class{
+        font-size: 14px;
+    }
+    td p{
+        font-size: smaller;
+    }
+}
