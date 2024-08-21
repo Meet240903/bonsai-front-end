@@ -3520,11 +3520,10 @@ const Header = () => {
                         <img src={bonsaiLogo} className='img-fluid' style={{ height: '90px', width: '150px' }} alt="Logo" />
                     </a>
                 </div>
-                <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+                <nav className={`nav ${isMenuOpen ? 'open' : ''}`} style={{zIndex:'1'}}>
                     <ul>
                         <li className='product-menu'
-                            onMouseEnter={() => { setDropdownMenu(true); setTemplateDropDown(false) }}
-                            onClick={() => { setDropdownMenu(!dropdownMenu); setMultiDropdownMenu(false) }}
+                            onClick={() => { setDropdownMenu(!dropdownMenu); setMultiDropdownMenu(false); setTemplateDropDown(false) }}
                             ref={dropdownRef}>
                             Product
                         </li>
@@ -3581,8 +3580,7 @@ const Header = () => {
                             </div>
                         }
                         <li className='template-menu'
-                            onMouseEnter={() => { setTemplateDropDown(true); setDropdownMenu(false) }}
-                            onClick={() => setTemplateDropDown(!templateDropDown)}
+                            onClick={() => { setTemplateDropDown(!templateDropDown); setDropdownMenu(false) }}
                         >
                             Templates
                         </li>

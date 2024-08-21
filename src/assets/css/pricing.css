@@ -26,7 +26,6 @@
   height: 30px;
   background-color: #00b289; /* Consistent color */
   border-radius: 15px;
-  position: relative;
   cursor: pointer;
   margin: 0 0.5rem; /* Margin around the switch */
 }
@@ -37,7 +36,7 @@
   background-color: white; /* Background color of the toggle */
   border-radius: 50%;
   position: absolute;
-  top: 1px; /* Center the toggle vertically */
+  top: 245px; /* Center the toggle vertically */
   transition: transform 0.3s ease; /* Smooth toggle movement */
 }
 
@@ -179,7 +178,6 @@ ul li {
     text-align: center;
   }
   .charge-div {
-    
     padding: 2rem;
   }
 }
@@ -227,8 +225,10 @@ ul li {
     text-align: center;
   }
   .charge-div {
-    
     padding: 2rem;
+  }
+  .toggle {
+    top: 241.5px
   }
 }
 
@@ -243,6 +243,7 @@ ul li {
   .toggle {
     width: 20px; /* Smaller toggle */
     height: 20px;
+    top: 240px
   }
   .free-text-img {
     max-width: 100%; /* Full width for mobile screens */
