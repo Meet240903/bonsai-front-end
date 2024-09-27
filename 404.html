@@ -1,0 +1,8 @@
+<script type="text/javascript">
+  // Redirect all 404 paths to index.html to let React handle routing
+  var pathname = window.location.pathname;
+  if (!pathname.startsWith("/")) {
+    pathname = "/" + pathname;
+  }
+  window.location.replace("/#" + pathname);
+</script>
